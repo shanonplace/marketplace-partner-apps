@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.0.20](https://github.com/shanonplace/marketplace-partner-apps/compare/intershop-connector-v1.0.19...intershop-connector-v1.0.20) (2025-04-16)
+
+
+### Bug Fixes
+
+* **deps:** bump @contentful/app-sdk from 4.29.1 to 4.29.2 in /apps/intershop in the production-dependencies group ([#3372](https://github.com/shanonplace/marketplace-partner-apps/issues/3372)) ([9573d46](https://github.com/shanonplace/marketplace-partner-apps/commit/9573d467f9f7ce19f8707931eab090d16b13d18a))
+* **deps:** bump @contentful/app-sdk from 4.29.2 to 4.29.3 in /apps/intershop in the production-dependencies group ([#3445](https://github.com/shanonplace/marketplace-partner-apps/issues/3445)) ([4d8bc20](https://github.com/shanonplace/marketplace-partner-apps/commit/4d8bc20a9c1969202da37c1f689e110ebe8a2915))
+* **deps:** bump @emotion/css from 11.13.4 to 11.13.5 in /apps/intershop in the production-dependencies group ([#3654](https://github.com/shanonplace/marketplace-partner-apps/issues/3654)) ([9d08aac](https://github.com/shanonplace/marketplace-partner-apps/commit/9d08aac45219233055dc9844a2b1120f0a734703))
+* **deps:** bump contentful-management from 11.35.1 to 11.36.0 in /apps/intershop in the production-dependencies group ([#3412](https://github.com/shanonplace/marketplace-partner-apps/issues/3412)) ([b1b79b9](https://github.com/shanonplace/marketplace-partner-apps/commit/b1b79b9d6fbb072824a76e95c38f82953860b59c))
+* **deps:** bump contentful-management from 11.36.0 to 11.36.1 in /apps/intershop in the production-dependencies group ([#3484](https://github.com/shanonplace/marketplace-partner-apps/issues/3484)) ([d2ba691](https://github.com/shanonplace/marketplace-partner-apps/commit/d2ba691217c6db697bfb914c2b9299fff6c2091a))
+* **deps:** bump contentful-management from 11.36.1 to 11.36.2 in /apps/intershop in the production-dependencies group ([#3516](https://github.com/shanonplace/marketplace-partner-apps/issues/3516)) ([793e2ce](https://github.com/shanonplace/marketplace-partner-apps/commit/793e2ce9eda90f657f0f827d71b0806fe930fead))
+* **deps:** bump contentful-management from 11.36.2 to 11.37.0 in /apps/intershop in the production-dependencies group ([#3577](https://github.com/shanonplace/marketplace-partner-apps/issues/3577)) ([5655205](https://github.com/shanonplace/marketplace-partner-apps/commit/5655205b09d1b7b3d5e897ba1b5f7fbfe1cd5e95))
+* **deps:** bump contentful-management from 11.37.0 to 11.38.0 in /apps/intershop in the production-dependencies group ([#3611](https://github.com/shanonplace/marketplace-partner-apps/issues/3611)) ([7c50dad](https://github.com/shanonplace/marketplace-partner-apps/commit/7c50dad9e0e21bfbd293ca1dcbbfbd66b8e5c53a))
+* **deps:** bump contentful-management from 11.38.0 to 11.39.1 in /apps/intershop in the production-dependencies group ([#3667](https://github.com/shanonplace/marketplace-partner-apps/issues/3667)) ([10792aa](https://github.com/shanonplace/marketplace-partner-apps/commit/10792aa7b007a3d3cb9146420f5ed13257727686))
+* **deps:** bump contentful-management from 11.39.1 to 11.39.2 in /apps/intershop in the production-dependencies group ([#3698](https://github.com/shanonplace/marketplace-partner-apps/issues/3698)) ([3b74c00](https://github.com/shanonplace/marketplace-partner-apps/commit/3b74c0075774106a2868fb6210562fd1aef84799))
+* **deps:** bump contentful-management from 11.39.2 to 11.40.0 in /apps/intershop in the production-dependencies group ([#3713](https://github.com/shanonplace/marketplace-partner-apps/issues/3713)) ([4911eec](https://github.com/shanonplace/marketplace-partner-apps/commit/4911eecfd82ff8a6a26693baf3d4e088f933e290))
+* **deps:** bump the production-dependencies group in /apps/intershop with 2 updates ([#3631](https://github.com/shanonplace/marketplace-partner-apps/issues/3631)) ([c734c0d](https://github.com/shanonplace/marketplace-partner-apps/commit/c734c0dc5648d62dc0ea9195ee40c7ad06066a36))
+* **deps:** bump the production-dependencies group in /apps/intershop with 2 updates ([#3754](https://github.com/shanonplace/marketplace-partner-apps/issues/3754)) ([2e962e3](https://github.com/shanonplace/marketplace-partner-apps/commit/2e962e394b417fc770b80abb12cb6d40635b19e8))
+
 ## [1.0.19](https://github.com/contentful/marketplace-partner-apps/compare/intershop-connector-v1.0.18...intershop-connector-v1.0.19) (2024-12-10)
 
 
