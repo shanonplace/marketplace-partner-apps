@@ -1,5 +1,29 @@
 # Changelog
 
+## [1.0.26](https://github.com/shanonplace/marketplace-partner-apps/compare/uploadcare-contentful-app-v1.0.25...uploadcare-contentful-app-v1.0.26) (2025-04-16)
+
+
+### Bug Fixes
+
+* **deps:** bump @contentful/app-sdk from 4.29.1 to 4.29.2 in /apps/uploadcare in the production-dependencies group ([#3378](https://github.com/shanonplace/marketplace-partner-apps/issues/3378)) ([4318027](https://github.com/shanonplace/marketplace-partner-apps/commit/4318027aeea0ad15b7cd68c3bf211d78d0dd0f57))
+* **deps:** bump @contentful/app-sdk from 4.29.2 to 4.29.3 in /apps/uploadcare in the production-dependencies group ([#3444](https://github.com/shanonplace/marketplace-partner-apps/issues/3444)) ([0d1f94e](https://github.com/shanonplace/marketplace-partner-apps/commit/0d1f94ea92427b800e47ac25b2dd21d3f982c577))
+* **deps:** bump @contentful/f36-components from 4.74.1 to 4.74.2 in /apps/uploadcare in the production-dependencies group ([#3633](https://github.com/shanonplace/marketplace-partner-apps/issues/3633)) ([eedf5a1](https://github.com/shanonplace/marketplace-partner-apps/commit/eedf5a15dc8d9f2fe36ac160b9dcc6153f6010f9))
+* **deps:** bump @contentful/f36-components from 4.74.2 to 4.74.3 in /apps/uploadcare in the production-dependencies group ([#3744](https://github.com/shanonplace/marketplace-partner-apps/issues/3744)) ([f2580a4](https://github.com/shanonplace/marketplace-partner-apps/commit/f2580a43ad8024f1dc1394047a051f5a9496c05a))
+* **deps:** bump @dnd-kit/core from 6.1.0 to 6.2.0 in /apps/uploadcare in the production-dependencies group ([#3686](https://github.com/shanonplace/marketplace-partner-apps/issues/3686)) ([1ff80b5](https://github.com/shanonplace/marketplace-partner-apps/commit/1ff80b579da8cb6eb0f629319a44d9ed0fddd598))
+* **deps:** bump @dnd-kit/core from 6.3.0 to 6.3.1 in /apps/uploadcare in the production-dependencies group ([#3841](https://github.com/shanonplace/marketplace-partner-apps/issues/3841)) ([8cb06df](https://github.com/shanonplace/marketplace-partner-apps/commit/8cb06dfc1f21ac594d0a3ee19d89ebbaaa8bd29c))
+* **deps:** bump @emotion/css from 11.13.4 to 11.13.5 in /apps/uploadcare in the production-dependencies group ([#3652](https://github.com/shanonplace/marketplace-partner-apps/issues/3652)) ([7cfc996](https://github.com/shanonplace/marketplace-partner-apps/commit/7cfc996d68de16cfd6417b3d2c921adb47b3d8fa))
+* **deps:** bump axios from 1.7.4 to 1.8.2 in /apps/uploadcare ([#4607](https://github.com/shanonplace/marketplace-partner-apps/issues/4607)) ([65baa6e](https://github.com/shanonplace/marketplace-partner-apps/commit/65baa6e033eb0dc67bed7fd79a4548af0ee989a6))
+* **deps:** bump contentful-management from 11.35.1 to 11.36.0 in /apps/uploadcare in the production-dependencies group ([#3432](https://github.com/shanonplace/marketplace-partner-apps/issues/3432)) ([5184bd9](https://github.com/shanonplace/marketplace-partner-apps/commit/5184bd9da07921c5c67a7738d09c7adfd46566af))
+* **deps:** bump contentful-management from 11.36.0 to 11.36.1 in /apps/uploadcare in the production-dependencies group ([#3474](https://github.com/shanonplace/marketplace-partner-apps/issues/3474)) ([9dddd87](https://github.com/shanonplace/marketplace-partner-apps/commit/9dddd87fa5ea9bc815658f8ca93211939f2a9c7b))
+* **deps:** Bump contentful-management from 11.36.1 to 11.36.2 in /apps/uploadcare in the production-dependencies group ([#3527](https://github.com/shanonplace/marketplace-partner-apps/issues/3527)) ([1dfa800](https://github.com/shanonplace/marketplace-partner-apps/commit/1dfa8004e39c0176c2ccd08186be36c46affb458))
+* **deps:** bump contentful-management from 11.36.2 to 11.37.0 in /apps/uploadcare in the production-dependencies group ([#3583](https://github.com/shanonplace/marketplace-partner-apps/issues/3583)) ([3d40847](https://github.com/shanonplace/marketplace-partner-apps/commit/3d40847502ace6f16409baefd08468a4116df006))
+* **deps:** bump contentful-management from 11.37.0 to 11.38.0 in /apps/uploadcare in the production-dependencies group ([#3606](https://github.com/shanonplace/marketplace-partner-apps/issues/3606)) ([a80375a](https://github.com/shanonplace/marketplace-partner-apps/commit/a80375a068f508ffc9f68a95f77d0dce309c2498))
+* **deps:** bump contentful-management from 11.38.0 to 11.39.1 in /apps/uploadcare in the production-dependencies group ([#3666](https://github.com/shanonplace/marketplace-partner-apps/issues/3666)) ([c7b6911](https://github.com/shanonplace/marketplace-partner-apps/commit/c7b691118407b1275e494c7d75dbdbc7835fc7d5))
+* **deps:** bump contentful-management from 11.39.1 to 11.39.2 in /apps/uploadcare in the production-dependencies group ([#3702](https://github.com/shanonplace/marketplace-partner-apps/issues/3702)) ([8546dfb](https://github.com/shanonplace/marketplace-partner-apps/commit/8546dfb3b1d37c1115e977740d3f17e252ebc948))
+* **deps:** bump contentful-management from 11.39.2 to 11.40.0 in /apps/uploadcare in the production-dependencies group ([#3715](https://github.com/shanonplace/marketplace-partner-apps/issues/3715)) ([f4960dd](https://github.com/shanonplace/marketplace-partner-apps/commit/f4960ddf4363089f2cc8a311186c10a08db4062c))
+* **deps:** bump contentful-management from 11.40.0 to 11.40.1 in /apps/uploadcare in the production-dependencies group ([#3800](https://github.com/shanonplace/marketplace-partner-apps/issues/3800)) ([456a126](https://github.com/shanonplace/marketplace-partner-apps/commit/456a126a5b2dd6f5da91c6167e28deeec6a93925))
+* **deps:** bump the production-dependencies group in /apps/uploadcare with 2 updates ([#3810](https://github.com/shanonplace/marketplace-partner-apps/issues/3810)) ([2f54505](https://github.com/shanonplace/marketplace-partner-apps/commit/2f545056044e2a12d778c3c8965927d0422a4dfd))
+
 ## [1.0.25](https://github.com/contentful/marketplace-partner-apps/compare/uploadcare-contentful-app-v1.0.24...uploadcare-contentful-app-v1.0.25) (2025-03-13)
 
 

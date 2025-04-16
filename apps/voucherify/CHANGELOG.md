@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.0.29](https://github.com/shanonplace/marketplace-partner-apps/compare/voucherify-contentful-app-v1.0.28...voucherify-contentful-app-v1.0.29) (2025-04-16)
+
+
+### Bug Fixes
+
+* **deps:** bump @contentful/app-sdk from 4.29.1 to 4.29.2 in /apps/voucherify in the production-dependencies group ([#3383](https://github.com/shanonplace/marketplace-partner-apps/issues/3383)) ([5afa7cc](https://github.com/shanonplace/marketplace-partner-apps/commit/5afa7cc8db6d8c8bcc0603bc380bcaefe378d1a5))
+* **deps:** bump @contentful/app-sdk from 4.29.2 to 4.29.3 in /apps/voucherify in the production-dependencies group ([#3438](https://github.com/shanonplace/marketplace-partner-apps/issues/3438)) ([d2b6bf6](https://github.com/shanonplace/marketplace-partner-apps/commit/d2b6bf6a09d3a6ae9bf2e3601f446ad52b9bb5af))
+* **deps:** bump @contentful/f36-components from 4.74.1 to 4.74.2 in /apps/voucherify in the production-dependencies group ([#3629](https://github.com/shanonplace/marketplace-partner-apps/issues/3629)) ([549de73](https://github.com/shanonplace/marketplace-partner-apps/commit/549de73f77761eeaeaeeea6585fac39a56afaab9))
+* **deps:** bump @contentful/f36-components from 4.74.2 to 4.74.3 in /apps/voucherify in the production-dependencies group ([#3737](https://github.com/shanonplace/marketplace-partner-apps/issues/3737)) ([ddcd4a7](https://github.com/shanonplace/marketplace-partner-apps/commit/ddcd4a78268061efc919ad10e16284bb9524ecde))
+* **deps:** bump @contentful/f36-components from 4.74.3 to 4.75.0 in /apps/voucherify in the production-dependencies group ([#3880](https://github.com/shanonplace/marketplace-partner-apps/issues/3880)) ([db35039](https://github.com/shanonplace/marketplace-partner-apps/commit/db350390a54eeba46027bddf7aa318c6acaea9d7))
+* **deps:** bump @contentful/f36-components from 4.75.1 to 4.75.2 in /apps/voucherify in the production-dependencies group ([#3898](https://github.com/shanonplace/marketplace-partner-apps/issues/3898)) ([420a23b](https://github.com/shanonplace/marketplace-partner-apps/commit/420a23b6deee2d82f15a30570bc4f71231f18ce9))
+* **deps:** bump axios from 1.7.7 to 1.7.8 in /apps/voucherify in the production-dependencies group ([#3697](https://github.com/shanonplace/marketplace-partner-apps/issues/3697)) ([aea6942](https://github.com/shanonplace/marketplace-partner-apps/commit/aea6942acfa34de78b6b2feb4ef78115701c8013))
+* **deps:** bump axios from 1.7.8 to 1.7.9 in /apps/voucherify in the production-dependencies group ([#3819](https://github.com/shanonplace/marketplace-partner-apps/issues/3819)) ([20f5664](https://github.com/shanonplace/marketplace-partner-apps/commit/20f5664066c5fbfa7fd429b196eeb8e7cd716522))
+* **deps:** bump axios from 1.7.9 to 1.8.2 in /apps/voucherify ([#4609](https://github.com/shanonplace/marketplace-partner-apps/issues/4609)) ([fa95b7a](https://github.com/shanonplace/marketplace-partner-apps/commit/fa95b7acdd03c2d5e615bb73c5ff449a1652ca5f))
+* **deps:** bump react-hook-form from 7.53.1 to 7.53.2 in /apps/voucherify in the production-dependencies group ([#3550](https://github.com/shanonplace/marketplace-partner-apps/issues/3550)) ([bd680c2](https://github.com/shanonplace/marketplace-partner-apps/commit/bd680c2583d2c21098f9493cbf88ff52f56724c8))
+* **deps:** bump react-hook-form from 7.53.2 to 7.54.0 in /apps/voucherify in the production-dependencies group ([#3853](https://github.com/shanonplace/marketplace-partner-apps/issues/3853)) ([4020fff](https://github.com/shanonplace/marketplace-partner-apps/commit/4020ffffeeb428ae842c6c5a5ab4ead994651338))
+* **deps:** bump react-hook-form from 7.54.1 to 7.54.2 in /apps/voucherify in the production-dependencies group ([#3930](https://github.com/shanonplace/marketplace-partner-apps/issues/3930)) ([531b405](https://github.com/shanonplace/marketplace-partner-apps/commit/531b40558b06a71a797830cdcc28faeae56c5be8))
+* **deps:** bump react-router-dom from 6.27.0 to 6.28.0 in /apps/voucherify in the production-dependencies group ([#3482](https://github.com/shanonplace/marketplace-partner-apps/issues/3482)) ([89aabbd](https://github.com/shanonplace/marketplace-partner-apps/commit/89aabbda08f031530c4b9e565581ff9d6e742785))
+* **deps:** bump the production-dependencies group in /apps/voucherify with 2 updates ([#3856](https://github.com/shanonplace/marketplace-partner-apps/issues/3856)) ([bc6a7ce](https://github.com/shanonplace/marketplace-partner-apps/commit/bc6a7ceec768619d16629d65526104c14f71368a))
+* **deps:** bump the production-dependencies group in /apps/voucherify with 2 updates ([#3885](https://github.com/shanonplace/marketplace-partner-apps/issues/3885)) ([230d61b](https://github.com/shanonplace/marketplace-partner-apps/commit/230d61bd489cd3cfa6c5b0d4f4302916966ce2f6))
+* **deps:** bump the production-dependencies group in /apps/voucherify with 3 updates ([#3659](https://github.com/shanonplace/marketplace-partner-apps/issues/3659)) ([f14b795](https://github.com/shanonplace/marketplace-partner-apps/commit/f14b7956aff10cf4bb1ed165f541cf0f29c28b84))
+
 ## [1.0.28](https://github.com/contentful/marketplace-partner-apps/compare/voucherify-contentful-app-v1.0.27...voucherify-contentful-app-v1.0.28) (2025-03-13)
 
 

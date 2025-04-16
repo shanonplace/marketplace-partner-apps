@@ -1,5 +1,28 @@
 # Changelog
 
+## [1.0.31](https://github.com/shanonplace/marketplace-partner-apps/compare/surfer-contentful-app-v1.0.30...surfer-contentful-app-v1.0.31) (2025-04-16)
+
+
+### Bug Fixes
+
+* **deps:** bump @contentful/app-sdk from 4.29.2 to 4.29.3 in /apps/surfer in the production-dependencies group ([#3433](https://github.com/shanonplace/marketplace-partner-apps/issues/3433)) ([48926d0](https://github.com/shanonplace/marketplace-partner-apps/commit/48926d0c89822dad3906e06575664ff5fb125941))
+* **deps:** bump @contentful/f36-components from 4.74.1 to 4.74.2 in /apps/surfer in the production-dependencies group ([#3630](https://github.com/shanonplace/marketplace-partner-apps/issues/3630)) ([2d0f55f](https://github.com/shanonplace/marketplace-partner-apps/commit/2d0f55f01fc32a13bb4c716e64ee653067f1479f))
+* **deps:** bump @contentful/f36-components from 4.74.2 to 4.74.3 in /apps/surfer in the production-dependencies group ([#3752](https://github.com/shanonplace/marketplace-partner-apps/issues/3752)) ([110a416](https://github.com/shanonplace/marketplace-partner-apps/commit/110a4165c570337709570cdfc9a663e985cb1160))
+* **deps:** bump @emotion/css from 11.13.4 to 11.13.5 in /apps/surfer in the production-dependencies group ([#3650](https://github.com/shanonplace/marketplace-partner-apps/issues/3650)) ([0a4a814](https://github.com/shanonplace/marketplace-partner-apps/commit/0a4a8149e86a98f8f8ea3cb035810a6d41d6d37f))
+* **deps:** bump axios from 1.8.1 to 1.8.2 in /apps/surfer ([#4605](https://github.com/shanonplace/marketplace-partner-apps/issues/4605)) ([e52c812](https://github.com/shanonplace/marketplace-partner-apps/commit/e52c8121c292f45ca8a7ff10c8e146d643cca620))
+* **deps:** bump contentful-management from 11.35.1 to 11.36.0 in /apps/surfer in the production-dependencies group ([#3425](https://github.com/shanonplace/marketplace-partner-apps/issues/3425)) ([f81110f](https://github.com/shanonplace/marketplace-partner-apps/commit/f81110fb4fa5667295616f00579c89c46e82eea2))
+* **deps:** Bump contentful-management from 11.36.1 to 11.36.2 in /apps/surfer in the production-dependencies group ([#3520](https://github.com/shanonplace/marketplace-partner-apps/issues/3520)) ([4a52b78](https://github.com/shanonplace/marketplace-partner-apps/commit/4a52b78c46514e25bf0bbbe2da7d63db3f20fb4b))
+* **deps:** bump contentful-management from 11.36.2 to 11.37.0 in /apps/surfer in the production-dependencies group ([#3568](https://github.com/shanonplace/marketplace-partner-apps/issues/3568)) ([ae66c08](https://github.com/shanonplace/marketplace-partner-apps/commit/ae66c0832550eb49472b401eb0bd4bad6e7bc51e))
+* **deps:** bump contentful-management from 11.37.0 to 11.38.0 in /apps/surfer in the production-dependencies group ([#3608](https://github.com/shanonplace/marketplace-partner-apps/issues/3608)) ([3b2daa2](https://github.com/shanonplace/marketplace-partner-apps/commit/3b2daa2c2a5609ff0e1d0952b884e86865aaa7c0))
+* **deps:** bump contentful-management from 11.38.0 to 11.39.1 in /apps/surfer in the production-dependencies group ([#3668](https://github.com/shanonplace/marketplace-partner-apps/issues/3668)) ([abedb77](https://github.com/shanonplace/marketplace-partner-apps/commit/abedb7754a5fe8a7b5f292e97e06ffb6fd3c323c))
+* **deps:** bump contentful-management from 11.39.1 to 11.39.2 in /apps/surfer in the production-dependencies group ([#3699](https://github.com/shanonplace/marketplace-partner-apps/issues/3699)) ([892f24d](https://github.com/shanonplace/marketplace-partner-apps/commit/892f24df91f9be1b72b965b477584c986301b053))
+* **deps:** bump contentful-management from 11.39.2 to 11.40.0 in /apps/surfer in the production-dependencies group ([#3710](https://github.com/shanonplace/marketplace-partner-apps/issues/3710)) ([02ef7dc](https://github.com/shanonplace/marketplace-partner-apps/commit/02ef7dccc393ef15697e10c184186b676dca07a3))
+* **deps:** bump contentful-management from 11.40.0 to 11.40.1 in /apps/surfer in the production-dependencies group ([#3797](https://github.com/shanonplace/marketplace-partner-apps/issues/3797)) ([0c90cb3](https://github.com/shanonplace/marketplace-partner-apps/commit/0c90cb3560d92b9f2cee52b81fe3a2f57cfe455f))
+* **deps:** bump contentful-management from 11.40.1 to 11.40.2 in /apps/surfer in the production-dependencies group ([#3812](https://github.com/shanonplace/marketplace-partner-apps/issues/3812)) ([9226138](https://github.com/shanonplace/marketplace-partner-apps/commit/92261383daf1211e30c60a9e4444638322c8e852))
+* **deps:** bump the production-dependencies group across 1 directory with 2 updates ([#4701](https://github.com/shanonplace/marketplace-partner-apps/issues/4701)) ([fcc577a](https://github.com/shanonplace/marketplace-partner-apps/commit/fcc577ad38411660ff9ba44b6730c62257b50ef3))
+* **deps:** bump the production-dependencies group in /apps/surfer with 2 updates ([#3487](https://github.com/shanonplace/marketplace-partner-apps/issues/3487)) ([e4f71d7](https://github.com/shanonplace/marketplace-partner-apps/commit/e4f71d758983f627a9f6f7ce767033f0a1e0b232))
+* **deps:** bump the production-dependencies group in /apps/surfer with 5 updates ([#4569](https://github.com/shanonplace/marketplace-partner-apps/issues/4569)) ([6126704](https://github.com/shanonplace/marketplace-partner-apps/commit/612670486211c3d2a8461c823a1a8b1f9734bfe0))
+
 ## [1.0.30](https://github.com/contentful/marketplace-partner-apps/compare/surfer-contentful-app-v1.0.29...surfer-contentful-app-v1.0.30) (2025-03-28)
 
 

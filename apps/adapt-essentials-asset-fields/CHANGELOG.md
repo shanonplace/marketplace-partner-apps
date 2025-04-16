@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.1.11](https://github.com/shanonplace/marketplace-partner-apps/compare/adapt-essentials-asset-fields-v1.1.10...adapt-essentials-asset-fields-v1.1.11) (2025-04-16)
+
+
+### Bug Fixes
+
+* **deps:** bump @contentful/app-sdk from 4.29.1 to 4.29.2 in /apps/adapt-essentials-asset-fields in the production-dependencies group ([#3373](https://github.com/shanonplace/marketplace-partner-apps/issues/3373)) ([cc2ce4e](https://github.com/shanonplace/marketplace-partner-apps/commit/cc2ce4edac18cd34e7ea91252e3f6a4dd4746e27))
+* **deps:** bump @contentful/app-sdk from 4.29.2 to 4.29.3 in /apps/adapt-essentials-asset-fields in the production-dependencies group ([#3443](https://github.com/shanonplace/marketplace-partner-apps/issues/3443)) ([8322d18](https://github.com/shanonplace/marketplace-partner-apps/commit/8322d1810a5bb6ac8fb0fde8ff083c10672e3d98))
+* **deps:** bump cross-spawn from 7.0.3 to 7.0.5 in /apps/adapt-essentials-asset-fields ([#3619](https://github.com/shanonplace/marketplace-partner-apps/issues/3619)) ([fbb756f](https://github.com/shanonplace/marketplace-partner-apps/commit/fbb756fa554afd79748111d7c5d227fd926750ba))
+* **deps:** bump prettier from 3.3.3 to 3.4.1 in /apps/adapt-essentials-asset-fields in the production-dependencies group ([#3729](https://github.com/shanonplace/marketplace-partner-apps/issues/3729)) ([8bf2543](https://github.com/shanonplace/marketplace-partner-apps/commit/8bf25431346ebd13e813c4c169c715b432306f52))
+* **deps:** bump prettier from 3.4.1 to 3.4.2 in /apps/adapt-essentials-asset-fields in the production-dependencies group ([#3815](https://github.com/shanonplace/marketplace-partner-apps/issues/3815)) ([ff48838](https://github.com/shanonplace/marketplace-partner-apps/commit/ff48838b93423bd87525536e7c81a51830655d89))
+* **deps:** bump react-router-dom from 6.27.0 to 6.28.0 in /apps/adapt-essentials-asset-fields in the production-dependencies group ([#3479](https://github.com/shanonplace/marketplace-partner-apps/issues/3479)) ([01968df](https://github.com/shanonplace/marketplace-partner-apps/commit/01968dffcf1530fe8b1d22b11621483f0c4d68a5))
+* **deps:** bump the production-dependencies group in /apps/adapt-essentials-asset-fields with 2 updates ([#3635](https://github.com/shanonplace/marketplace-partner-apps/issues/3635)) ([6b7e50d](https://github.com/shanonplace/marketplace-partner-apps/commit/6b7e50deea053fd4e5732cde3d2711435cf1d85d))
+* **deps:** bump the production-dependencies group in /apps/adapt-essentials-asset-fields with 2 updates ([#3736](https://github.com/shanonplace/marketplace-partner-apps/issues/3736)) ([8820be9](https://github.com/shanonplace/marketplace-partner-apps/commit/8820be9d2a91a3f49c7f3f3af39976c9db6b78d1))
+
 ## [1.1.10](https://github.com/contentful/marketplace-partner-apps/compare/adapt-essentials-asset-fields-v1.1.9...adapt-essentials-asset-fields-v1.1.10) (2024-12-10)
 
 

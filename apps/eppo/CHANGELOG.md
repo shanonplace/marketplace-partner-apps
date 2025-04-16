@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.5](https://github.com/shanonplace/marketplace-partner-apps/compare/eppo-contentful-app-v1.0.4...eppo-contentful-app-v1.0.5) (2025-04-16)
+
+
+### Bug Fixes
+
+* **deps:** bump @contentful/app-sdk from 4.29.1 to 4.29.2 in /apps/eppo in the production-dependencies group ([#3376](https://github.com/shanonplace/marketplace-partner-apps/issues/3376)) ([9e07ee6](https://github.com/shanonplace/marketplace-partner-apps/commit/9e07ee6808478eb1485da966fd909f86cb24ad92))
+* **deps:** bump cross-spawn from 7.0.3 to 7.0.5 in /apps/eppo ([#3621](https://github.com/shanonplace/marketplace-partner-apps/issues/3621)) ([ae601b3](https://github.com/shanonplace/marketplace-partner-apps/commit/ae601b3d60914f701c869adf0104f3d56865f2ba))
+* **deps:** bump nanoid from 3.3.7 to 3.3.8 in /apps/eppo ([#3860](https://github.com/shanonplace/marketplace-partner-apps/issues/3860)) ([067e0e2](https://github.com/shanonplace/marketplace-partner-apps/commit/067e0e2b3f712a809639336bcf3f2678416da60f))
+* **deps:** bump path-to-regexp and express in /apps/eppo ([#3826](https://github.com/shanonplace/marketplace-partner-apps/issues/3826)) ([d11d3e2](https://github.com/shanonplace/marketplace-partner-apps/commit/d11d3e2ae4c3f42489edc09fe43aea8c2643c463))
+* **eppo:** enforce content-type validations in variants [] ([#4742](https://github.com/shanonplace/marketplace-partner-apps/issues/4742)) ([589e6fd](https://github.com/shanonplace/marketplace-partner-apps/commit/589e6fd3e15c6bc40e66b96e7f1a7859d72d74a2))
+
 ## [1.0.4](https://github.com/contentful/marketplace-partner-apps/compare/eppo-contentful-app-v1.0.3...eppo-contentful-app-v1.0.4) (2025-03-28)
 
 

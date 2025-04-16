@@ -1,5 +1,30 @@
 # Changelog
 
+## [1.0.29](https://github.com/shanonplace/marketplace-partner-apps/compare/ceros-contentful-app-v1.0.28...ceros-contentful-app-v1.0.29) (2025-04-16)
+
+
+### Bug Fixes
+
+* **deps:** bump @contentful/app-sdk from 4.29.2 to 4.29.3 in /apps/ceros in the production-dependencies group ([#3436](https://github.com/shanonplace/marketplace-partner-apps/issues/3436)) ([dc5da0b](https://github.com/shanonplace/marketplace-partner-apps/commit/dc5da0b813d9d7d6f4ae0fd4a8b9b24a4659c304))
+* **deps:** bump @contentful/f36-components from 4.74.1 to 4.74.2 in /apps/ceros in the production-dependencies group ([#3632](https://github.com/shanonplace/marketplace-partner-apps/issues/3632)) ([ed10519](https://github.com/shanonplace/marketplace-partner-apps/commit/ed105197f63d57ef9021051f6e229a4484fc59a0))
+* **deps:** bump @contentful/f36-components from 4.74.2 to 4.74.3 in /apps/ceros in the production-dependencies group ([#3746](https://github.com/shanonplace/marketplace-partner-apps/issues/3746)) ([f0420c5](https://github.com/shanonplace/marketplace-partner-apps/commit/f0420c5a2c376effa3982ed2f9d000f04974dbbd))
+* **deps:** Bump @contentful/f36-components from 4.74.3 to 4.75.0 in /apps/ceros in the production-dependencies group ([#3876](https://github.com/shanonplace/marketplace-partner-apps/issues/3876)) ([33957fa](https://github.com/shanonplace/marketplace-partner-apps/commit/33957fa24c74041cb872bc0d62dcfdaa6d9ec69f))
+* **deps:** bump @contentful/f36-components from 4.75.0 to 4.75.1 in /apps/ceros in the production-dependencies group ([#3883](https://github.com/shanonplace/marketplace-partner-apps/issues/3883)) ([855f496](https://github.com/shanonplace/marketplace-partner-apps/commit/855f49613cf1a223d81d393f9204b505be30c3ec))
+* **deps:** bump @contentful/f36-components from 4.75.1 to 4.75.2 in /apps/ceros in the production-dependencies group ([#3899](https://github.com/shanonplace/marketplace-partner-apps/issues/3899)) ([b58104c](https://github.com/shanonplace/marketplace-partner-apps/commit/b58104cc766bfe717e7fb55563ba28495114d418))
+* **deps:** bump @emotion/css from 11.13.4 to 11.13.5 in /apps/ceros in the production-dependencies group ([#3656](https://github.com/shanonplace/marketplace-partner-apps/issues/3656)) ([b28b438](https://github.com/shanonplace/marketplace-partner-apps/commit/b28b438b003d22cdebb88652418b5ed9aba87369))
+* **deps:** bump axios from 1.8.1 to 1.8.2 in /apps/ceros ([#4628](https://github.com/shanonplace/marketplace-partner-apps/issues/4628)) ([878d94e](https://github.com/shanonplace/marketplace-partner-apps/commit/878d94e6217ce90a50d7c9fa9a36caa321dfe33e))
+* **deps:** bump contentful-management from 11.35.1 to 11.36.0 in /apps/ceros in the production-dependencies group ([#3428](https://github.com/shanonplace/marketplace-partner-apps/issues/3428)) ([f296db4](https://github.com/shanonplace/marketplace-partner-apps/commit/f296db4cf002a612825e43e6474554e4b3a64493))
+* **deps:** bump contentful-management from 11.36.0 to 11.36.1 in /apps/ceros in the production-dependencies group ([#3475](https://github.com/shanonplace/marketplace-partner-apps/issues/3475)) ([e26a1cc](https://github.com/shanonplace/marketplace-partner-apps/commit/e26a1cc1d2f717b73a71ec9b87ba65ca5e004e1c))
+* **deps:** Bump contentful-management from 11.36.1 to 11.36.2 in /apps/ceros in the production-dependencies group ([#3523](https://github.com/shanonplace/marketplace-partner-apps/issues/3523)) ([e715531](https://github.com/shanonplace/marketplace-partner-apps/commit/e715531caebeadf9780e17b81daf8a036d1196f7))
+* **deps:** bump contentful-management from 11.36.2 to 11.37.0 in /apps/ceros in the production-dependencies group ([#3574](https://github.com/shanonplace/marketplace-partner-apps/issues/3574)) ([6eb0e31](https://github.com/shanonplace/marketplace-partner-apps/commit/6eb0e313d704db63865c158efcd17f063a577f62))
+* **deps:** bump contentful-management from 11.37.0 to 11.38.0 in /apps/ceros in the production-dependencies group ([#3602](https://github.com/shanonplace/marketplace-partner-apps/issues/3602)) ([2ec501d](https://github.com/shanonplace/marketplace-partner-apps/commit/2ec501d51de1f03f8ade201f0680356b3cb8ca77))
+* **deps:** bump contentful-management from 11.38.0 to 11.39.1 in /apps/ceros in the production-dependencies group ([#3675](https://github.com/shanonplace/marketplace-partner-apps/issues/3675)) ([1b52ce7](https://github.com/shanonplace/marketplace-partner-apps/commit/1b52ce783b19a1533c179d2fc1823689dbcf6e92))
+* **deps:** bump contentful-management from 11.39.1 to 11.39.2 in /apps/ceros in the production-dependencies group ([#3704](https://github.com/shanonplace/marketplace-partner-apps/issues/3704)) ([fb13525](https://github.com/shanonplace/marketplace-partner-apps/commit/fb135257791aa93c3fae59c298bad0ccf152da0c))
+* **deps:** bump contentful-management from 11.39.2 to 11.40.0 in /apps/ceros in the production-dependencies group ([#3716](https://github.com/shanonplace/marketplace-partner-apps/issues/3716)) ([b04d040](https://github.com/shanonplace/marketplace-partner-apps/commit/b04d0406221a866b66523e54d25eaa4c86d4d419))
+* **deps:** bump contentful-management from 11.40.0 to 11.40.1 in /apps/ceros in the production-dependencies group ([#3798](https://github.com/shanonplace/marketplace-partner-apps/issues/3798)) ([8304815](https://github.com/shanonplace/marketplace-partner-apps/commit/8304815dc885627f4d1bc97ba00f3244ac72142e))
+* **deps:** bump contentful-management from 11.40.1 to 11.40.2 in /apps/ceros in the production-dependencies group ([#3816](https://github.com/shanonplace/marketplace-partner-apps/issues/3816)) ([ee03a38](https://github.com/shanonplace/marketplace-partner-apps/commit/ee03a389def66bae90bd37649b8f3724d9e6c1ea))
+* **deps:** bump the production-dependencies group in /apps/ceros with 5 updates ([#4541](https://github.com/shanonplace/marketplace-partner-apps/issues/4541)) ([7db0f0a](https://github.com/shanonplace/marketplace-partner-apps/commit/7db0f0a2e809630d3d2f7769c79bdfe9a248d78b))
+
 ## [1.0.28](https://github.com/contentful/marketplace-partner-apps/compare/ceros-contentful-app-v1.0.27...ceros-contentful-app-v1.0.28) (2025-03-13)
 
 

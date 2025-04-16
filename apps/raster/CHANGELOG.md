@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.6](https://github.com/shanonplace/marketplace-partner-apps/compare/raster-v1.0.5...raster-v1.0.6) (2025-04-16)
+
+
+### Bug Fixes
+
+* **deps:** bump nanoid from 3.3.7 to 3.3.8 in /apps/raster ([#3858](https://github.com/shanonplace/marketplace-partner-apps/issues/3858)) ([9527bb5](https://github.com/shanonplace/marketplace-partner-apps/commit/9527bb5812fa86319eb9b6cf586270dbf9e75db4))
+* **deps:** bump next from 14.2.10 to 14.2.15 in /apps/raster ([#3902](https://github.com/shanonplace/marketplace-partner-apps/issues/3902)) ([2d6ed08](https://github.com/shanonplace/marketplace-partner-apps/commit/2d6ed08f0c7231860e01abcd2d4cd9d75c738348))
+* **deps:** bump next from 14.2.15 to 14.2.21 in /apps/raster ([#4015](https://github.com/shanonplace/marketplace-partner-apps/issues/4015)) ([ce92674](https://github.com/shanonplace/marketplace-partner-apps/commit/ce92674a509e2696d8b6289b73ac43cf3e26dc94))
+
 ## [1.0.5](https://github.com/contentful/marketplace-partner-apps/compare/raster-v1.0.4...raster-v1.0.5) (2025-01-08)
 
 
