@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.5](https://github.com/shanonplace/marketplace-partner-apps/compare/lottie-preview-v1.0.4...lottie-preview-v1.0.5) (2025-06-02)
+
+
+### Bug Fixes
+
+* **deps:** bump the production-dependencies group across 1 directory with 4 updates [] ([#4976](https://github.com/shanonplace/marketplace-partner-apps/issues/4976)) ([2dfb40a](https://github.com/shanonplace/marketplace-partner-apps/commit/2dfb40ab5c05205bc41112a91e8e56ac051a4907))
+* hugging face add ability to save asset [INTEG-2583] ([#4987](https://github.com/shanonplace/marketplace-partner-apps/issues/4987)) ([c3fb5b9](https://github.com/shanonplace/marketplace-partner-apps/commit/c3fb5b9634a22c9b477d98418bb213db3fd5cafc))
+* lottie license [] ([#4983](https://github.com/shanonplace/marketplace-partner-apps/issues/4983)) ([45b4f3f](https://github.com/shanonplace/marketplace-partner-apps/commit/45b4f3fb015f3f30ddccbc4d66b24589f9da4890))
+* lottie preview rename [INTEG-2555] ([#4929](https://github.com/shanonplace/marketplace-partner-apps/issues/4929)) ([15211b9](https://github.com/shanonplace/marketplace-partner-apps/commit/15211b920d0b3661aa7dfdbf5d53588fb4f8528d))
+
 ## [1.0.4](https://github.com/contentful/marketplace-partner-apps/compare/lottie-preview-v1.0.3...lottie-preview-v1.0.4) (2025-05-28)
 
 
