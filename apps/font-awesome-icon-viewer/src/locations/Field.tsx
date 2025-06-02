@@ -43,18 +43,34 @@ const Field = () => {
       <Paragraph>Select a Font Awesome icon for this field.</Paragraph>
       <Box marginBottom="spacingM">
         <Text fontWeight="fontWeightDemiBold">Current selection:</Text>
-        <Box as="span" marginLeft="spacingS">
+        <Box
+          as="span"
+          marginLeft="spacingS"
+          padding="spacingM"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            minHeight: 48,
+            minWidth: 48,
+            border: '1px solid #eee',
+            borderRadius: 6,
+            background: '#fafbfc',
+            flexDirection: 'column',
+            justifyContent: 'center',
+          }}>
           {selected ? (
-            <i className={selected} style={{ fontSize: 24 }} aria-label={selected} />
+            <i className={selected} style={{ fontSize: 24 }} aria-label={selected} title={selected} />
           ) : (
             <Text as="span" fontColor="gray500">
               None
             </Text>
           )}
         </Box>
-        <Button variant="secondary" size="small" marginLeft="spacingM" onClick={openDialog}>
-          Choose Icon
-        </Button>
+        <Box marginTop="spacingM">
+          <Button variant="secondary" size="small" onClick={openDialog}>
+            Choose Icon
+          </Button>
+        </Box>
       </Box>
     </Box>
   );

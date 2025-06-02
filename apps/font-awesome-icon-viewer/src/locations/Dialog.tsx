@@ -46,7 +46,7 @@ const Dialog = () => {
       <Box marginBottom="spacingM">
         <TextInput value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search icons..." autoFocus />
       </Box>
-      <Grid columns="repeat(auto-fill, minmax(180px, 1fr))" gap="spacingS">
+      <Grid columns="repeat(auto-fill, minmax(90px, 1fr))" gap="spacingS" rowGap="spacingM">
         {filteredIcons.map((icon) => (
           <GridItem key={icon}>
             <Box
@@ -56,7 +56,7 @@ const Dialog = () => {
               style={{
                 border: icon === selected ? '2px solid #2563eb' : '1px solid #ccc',
                 borderRadius: 6,
-                padding: 8,
+                padding: 12,
                 background: 'white',
                 cursor: 'pointer',
                 width: '100%',
@@ -64,11 +64,11 @@ const Dialog = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
+                justifyContent: 'center',
               }}
               aria-label={icon}
               onClick={() => handleSelect(icon)}>
-              <i className={icon} style={{ fontSize: 24, marginBottom: 4 }} />
-              <span style={{ fontSize: 10, color: '#666', wordBreak: 'break-all', textAlign: 'center' }}>{icon}</span>
+              <i className={icon} style={{ fontSize: 40 }} />
             </Box>
           </GridItem>
         ))}
