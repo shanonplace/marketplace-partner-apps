@@ -1,5 +1,30 @@
 # Changelog
 
+## [2.2.0](https://github.com/shanonplace/marketplace-partner-apps/compare/shopify-sku-v2.1.2...shopify-sku-v2.2.0) (2025-06-17)
+
+
+### Features
+
+* document Shopify app migration to Storefront API [INTEG-2706] ([#5134](https://github.com/shanonplace/marketplace-partner-apps/issues/5134)) ([a6d2c6e](https://github.com/shanonplace/marketplace-partner-apps/commit/a6d2c6eddd953afb1345da40294dcbc4173c8968))
+
+
+### Bug Fixes
+
+* **deps:** bump @contentful/ecommerce-app-base from 4.0.9 to 4.0.32 in /apps/shopify in the production-dependencies group ([#3911](https://github.com/shanonplace/marketplace-partner-apps/issues/3911)) ([24c10a3](https://github.com/shanonplace/marketplace-partner-apps/commit/24c10a31d01c9c8b77e13ab5734af8d5d87eeb6e))
+* **deps:** bump @contentful/f36-components from 4.74.1 to 4.74.2 in /apps/shopify in the production-dependencies group ([#3640](https://github.com/shanonplace/marketplace-partner-apps/issues/3640)) ([6ffc460](https://github.com/shanonplace/marketplace-partner-apps/commit/6ffc460b5f6a17c63dd11b2f45e74d3bed0e53d5))
+* **deps:** bump @contentful/f36-components from 4.74.2 to 4.74.3 in /apps/shopify in the production-dependencies group ([#3739](https://github.com/shanonplace/marketplace-partner-apps/issues/3739)) ([50b64f4](https://github.com/shanonplace/marketplace-partner-apps/commit/50b64f4477db87c49b90e9183ff532081ca7f121))
+* **deps:** bump @contentful/f36-components from 4.74.3 to 4.75.0 in /apps/shopify in the production-dependencies group ([#3878](https://github.com/shanonplace/marketplace-partner-apps/issues/3878)) ([f29fb5a](https://github.com/shanonplace/marketplace-partner-apps/commit/f29fb5ac294d7dc2099360c84d4d5e74b7a03956))
+* **deps:** bump @contentful/f36-components from 4.75.0 to 4.75.1 in /apps/shopify in the production-dependencies group ([#3882](https://github.com/shanonplace/marketplace-partner-apps/issues/3882)) ([17cf559](https://github.com/shanonplace/marketplace-partner-apps/commit/17cf5590883bd06c3fb850488ec543429ea013ce))
+* **deps:** bump @contentful/f36-components from 4.75.1 to 4.75.2 in /apps/shopify in the production-dependencies group ([#3896](https://github.com/shanonplace/marketplace-partner-apps/issues/3896)) ([b4532b4](https://github.com/shanonplace/marketplace-partner-apps/commit/b4532b4f4117e026d11509c49a8b7de7f961ba17))
+* **deps:** bump @contentful/f36-components from 4.75.2 to 4.75.3 in /apps/shopify in the production-dependencies group ([#4023](https://github.com/shanonplace/marketplace-partner-apps/issues/4023)) ([89468cd](https://github.com/shanonplace/marketplace-partner-apps/commit/89468cd6d42659f7fff32a07288f352a8e26e9c7))
+* **deps:** bump @emotion/css from 11.13.4 to 11.13.5 in /apps/shopify in the production-dependencies group ([#3661](https://github.com/shanonplace/marketplace-partner-apps/issues/3661)) ([f0d5fcf](https://github.com/shanonplace/marketplace-partner-apps/commit/f0d5fcfce67266b7252aeddf29ddc8737c352c02))
+* **deps:** bump axios from 1.7.9 to 1.8.2 in /apps/shopify ([#4612](https://github.com/shanonplace/marketplace-partner-apps/issues/4612)) ([59010cb](https://github.com/shanonplace/marketplace-partner-apps/commit/59010cb295ef1a4909362f9a5e24dc7f4fb08342))
+* **deps:** bump cross-spawn from 7.0.3 to 7.0.5 in /apps/shopify ([#3618](https://github.com/shanonplace/marketplace-partner-apps/issues/3618)) ([c31e311](https://github.com/shanonplace/marketplace-partner-apps/commit/c31e3112f68fb999d6639b34b988ff72976ab35d))
+* **deps:** bump the production-dependencies group across 1 directory with 4 updates [] ([#4513](https://github.com/shanonplace/marketplace-partner-apps/issues/4513)) ([1db43b2](https://github.com/shanonplace/marketplace-partner-apps/commit/1db43b2505a7ee1a6ff0b6b4fdb2325fb9098e6d))
+* **deps:** bump the production-dependencies group in /apps/shopify with 2 updates ([#4032](https://github.com/shanonplace/marketplace-partner-apps/issues/4032)) ([7a5a04b](https://github.com/shanonplace/marketplace-partner-apps/commit/7a5a04be04032a3ed4bb6f3b8a739a1d5db235f1))
+* Shopify tag searching and wildcard fixes [ZEND-6490] ([#5164](https://github.com/shanonplace/marketplace-partner-apps/issues/5164)) ([ea3b463](https://github.com/shanonplace/marketplace-partner-apps/commit/ea3b463fc2363b9fa57ee921a9eb10c95d4b8ca7))
+* sku searching fixes and wildcard fixes [INTEG-2726] ([#5137](https://github.com/shanonplace/marketplace-partner-apps/issues/5137)) ([d7b4b64](https://github.com/shanonplace/marketplace-partner-apps/commit/d7b4b64e843847539f881e3c4181ae453d3e6a96))
+
 ## [2.1.2](https://github.com/contentful/marketplace-partner-apps/compare/shopify-sku-v2.1.1...shopify-sku-v2.1.2) (2025-06-13)
 
 
