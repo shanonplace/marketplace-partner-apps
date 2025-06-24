@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.2.0](https://github.com/shanonplace/marketplace-partner-apps/compare/amplitude-contentful-v1.1.0...amplitude-contentful-v1.2.0) (2025-06-24)
+
+
+### Features
+
+* Amplitude Experiment - add support for feature flags ([#4078](https://github.com/shanonplace/marketplace-partner-apps/issues/4078)) ([17a3ba8](https://github.com/shanonplace/marketplace-partner-apps/commit/17a3ba8b41fc6833a039692d3fe6f3bd825910fd))
+
+
+### Bug Fixes
+
+* **deps:** bump nanoid from 3.3.7 to 3.3.8 in /apps/amplitude-experiment ([#3888](https://github.com/shanonplace/marketplace-partner-apps/issues/3888)) ([432e95c](https://github.com/shanonplace/marketplace-partner-apps/commit/432e95ca6247b6c95f7d459c03323c46c2d54168))
+* **deps:** bump the production-dependencies group in /apps/amplitude-experiment with 5 updates ([#5045](https://github.com/shanonplace/marketplace-partner-apps/issues/5045)) ([ca996c4](https://github.com/shanonplace/marketplace-partner-apps/commit/ca996c4763e0299d06635c62ac9b885e05c28e30))
+
 ## [1.1.0](https://github.com/contentful/marketplace-partner-apps/compare/amplitude-contentful-v1.0.6...amplitude-contentful-v1.1.0) (2025-01-15)
 
 
