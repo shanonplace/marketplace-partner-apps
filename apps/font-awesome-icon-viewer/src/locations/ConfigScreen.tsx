@@ -1,28 +1,29 @@
 import { ConfigAppSDK } from '@contentful/app-sdk';
-import { Flex, Form, Heading, Paragraph } from '@contentful/f36-components';
-import { /* useCMA, */ useSDK } from '@contentful/react-apps-toolkit';
+import { Flex, Form, Heading, Paragraph, FormControl, TextInput, Note } from '@contentful/f36-components';
+import { useSDK } from '@contentful/react-apps-toolkit';
 import { css } from 'emotion';
 import { useCallback, useEffect, useState } from 'react';
 
-export interface AppInstallationParameters {}
+export interface AppInstallationParameters {
+  iconFontCssUrl?: string;
+}
 
 const ConfigScreen = () => {
   const [parameters, setParameters] = useState<AppInstallationParameters>({});
+  const [isValid, setIsValid] = useState(false);
   const sdk = useSDK<ConfigAppSDK>();
 
-  /*
-     To use the cma, inject it as follows.
-     If it is not needed, you can remove the next line.
-  */
-  // const cma = useCMA();
-
   const onConfigure = useCallback(async () => {
-    // This method will be called when a user clicks on "Install"
-    // or "Save" in the configuration screen.
-    // for more details see https://www.contentful.com/developers/docs/extensibility/ui-extensions/sdk-reference/#register-an-app-configuration-hook
+    // Log what we're saving for debugging
+    console.log('Saving installation parameters:', parameters);
 
-    // Get current the state of EditorInterface and other entities
-    // related to this app installation
+    // Validate that iconFontCssUrl is provided
+    if (!parameters.iconFontCssUrl) {
+      sdk.notifier.error('Icon Font CSS URL is required');
+      return false;
+    }
+
+    // Get current state
     const currentState = await sdk.app.getCurrentState();
 
     return {
@@ -35,33 +36,67 @@ const ConfigScreen = () => {
   }, [parameters, sdk]);
 
   useEffect(() => {
-    // `onConfigure` allows to configure a callback to be
-    // invoked when a user attempts to install the app or update
-    // its configuration.
+    // Validate parameters whenever they change
+    setIsValid(!!parameters.iconFontCssUrl);
+
+    // Register configure callback
     sdk.app.onConfigure(() => onConfigure());
-  }, [sdk, onConfigure]);
+  }, [parameters, sdk, onConfigure]);
 
   useEffect(() => {
     (async () => {
-      // Get current parameters of the app.
-      // If the app is not installed yet, `parameters` will be `null`.
+      // Get current parameters
       const currentParameters: AppInstallationParameters | null = await sdk.app.getParameters();
 
       if (currentParameters) {
         setParameters(currentParameters);
+        setIsValid(!!currentParameters.iconFontCssUrl);
       }
 
-      // Once preparation has finished, call `setReady` to hide
-      // the loading screen and present the app to a user.
+      // Set the app as ready
       sdk.app.setReady();
     })();
   }, [sdk]);
 
+  const handleIconFontUrlChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const url = e.target.value.trim();
+    setParameters((prev) => ({
+      ...prev,
+      iconFontCssUrl: url,
+    }));
+    setIsValid(!!url);
+  };
+
   return (
     <Flex flexDirection="column" className={css({ margin: '80px', maxWidth: '800px' })}>
       <Form>
-        <Heading>App Config</Heading>
-        <Paragraph>Welcome to your contentful app. This is your config page.</Paragraph>
+        <Heading>Icon Font Configuration</Heading>
+        <Paragraph>Configure the CSS file URL for your icon font.</Paragraph>
+
+        {!isValid && (
+          <Note variant="warning" title="Required Configuration">
+            You must provide an Icon Font CSS URL to install this app.
+          </Note>
+        )}
+
+        <FormControl isRequired isInvalid={!isValid && parameters.iconFontCssUrl !== undefined}>
+          <FormControl.Label>Icon Font CSS URL</FormControl.Label>
+          <TextInput
+            value={parameters.iconFontCssUrl || ''}
+            onChange={handleIconFontUrlChange}
+            placeholder="https://ds.iop.ohio.gov/fontawesome/css/all.css"
+            type="url"
+            name="iconFontCssUrl"
+            width="full"
+            required
+          />
+          <FormControl.HelpText>
+            Enter the URL to the CSS file that contains your icon font definitions. Example: https://ds.iop.ohio.gov/fontawesome/css/all.css
+          </FormControl.HelpText>
+          {!isValid && parameters.iconFontCssUrl !== undefined && (
+            <FormControl.ValidationMessage>This field is required for the app to function.</FormControl.ValidationMessage>
+          )}
+        </FormControl>
       </Form>
     </Flex>
   );
