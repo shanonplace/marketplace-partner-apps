@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.25](https://github.com/shanonplace/marketplace-partner-apps/compare/image-hotspot-creator-v1.0.24...image-hotspot-creator-v1.0.25) (2025-06-24)
+
+
+### Bug Fixes
+
+* **deps:** bump nanoid from 3.3.7 to 3.3.8 in /apps/imageHotspotCreator ([#3887](https://github.com/shanonplace/marketplace-partner-apps/issues/3887)) ([2c2acf7](https://github.com/shanonplace/marketplace-partner-apps/commit/2c2acf73eceb6c9cd4f40140f7ea9b319252356b))
+* **deps:** bump the production-dependencies group in /apps/imageHotspotCreator with 9 updates ([#5080](https://github.com/shanonplace/marketplace-partner-apps/issues/5080)) ([6b5a9d8](https://github.com/shanonplace/marketplace-partner-apps/commit/6b5a9d80e64ef146a03580c6dabbbc9c1f3cba65))
+
 ## [1.0.24](https://github.com/contentful/marketplace-partner-apps/compare/image-hotspot-creator-v1.0.23...image-hotspot-creator-v1.0.24) (2025-01-08)
 
 
