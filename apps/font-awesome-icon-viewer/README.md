@@ -1,3 +1,68 @@
+# CSS Icon Font Viewer for Contentful
+
+A Contentful app that allows you to browse and select icons from your own Font Awesome CSS URL (including custom kits or CDN links) or the latest Phosphor Icons web font. This app is focused on robust, high-quality support for these two popular icon libraries.
+
+## Supported Icon Libraries
+
+This app currently supports:
+
+- **Font Awesome** (all versions, including any valid CSS URL such as custom kits or CDN links) – Uses metadata for optimal performance. You must provide your own CSS URL.
+- **Phosphor Icons** (latest web font, e.g. @phosphor-icons/web) – Supports all weights and styles.
+
+Other icon fonts are not supported at this time. Support for additional specific libraries may be added in the future.
+
+## Features
+
+- **Font Awesome & Phosphor Icons Support**: Robust, custom logic for each library
+- **Automatic Library Detection**: Identifies the icon library from the CSS URL
+- **Smart Icon Extraction**: Parses CSS to extract all available icon classes
+- **Search Functionality**: Quickly find icons by name
+- **Visual Icon Picker**: Browse icons with visual previews
+- **Metadata Optimization**: Uses Font Awesome metadata when available for better performance
+
+## Setup
+
+1. Install the app in your Contentful space
+2. Configure the CSS URL for your Font Awesome stylesheet or Phosphor Icons web font
+3. Add the app to your content types as a field
+
+### Example CSS URLs
+
+**Font Awesome (replace YOUR_KIT_ID with your kit, or use any valid CDN link):**
+
+```
+https://kit.fontawesome.com/YOUR_KIT_ID.css
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+```
+
+**Phosphor Icons (latest web font):**
+
+```
+https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css
+```
+
+## What the User Needs to Supply
+
+To use this app, you only need to provide:
+
+1. **CSS URL**: The URL to the CSS file containing the icon font definitions for Font Awesome or Phosphor Icons
+2. That's it! The app handles the rest automatically:
+   - Detects the icon library type
+   - Extracts all available icon classes
+   - Provides a searchable interface
+   - Renders icons with proper styling
+
+## How It Works
+
+1. **Library Detection**: The app analyzes the CSS URL and content to identify the icon library
+2. **Icon Extraction**: It parses the CSS using library-specific patterns to find icon classes
+3. **Smart Rendering**: Icons are displayed using the correct class names and styling
+4. **Metadata Optimization**: For Font Awesome, it uses included metadata for better performance
+
+## Extending Support
+
+To add support for a new icon library, custom logic must be added to `src/utils/iconLibraries.ts` for detection and extraction. Generic icon font support is not provided.
+
 This project was bootstrapped with [Create Contentful App](https://github.com/contentful/create-contentful-app).
 
 ## How to use

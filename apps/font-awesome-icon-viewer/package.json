@@ -1,6 +1,6 @@
 {
-  "name": "font-awesome-icon-viewer",
-  "version": "0.1.0",
+  "name": "css-icon-font-viewer",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@contentful/app-sdk": "4.25.0",
