@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.0.30](https://github.com/shanonplace/marketplace-partner-apps/compare/voucherify-contentful-app-v1.0.29...voucherify-contentful-app-v1.0.30) (2025-07-10)
+
+
+### Bug Fixes
+
+* **deps:** bump @contentful/f36-components from 4.74.3 to 4.75.0 in /apps/voucherify in the production-dependencies group ([#3880](https://github.com/shanonplace/marketplace-partner-apps/issues/3880)) ([db35039](https://github.com/shanonplace/marketplace-partner-apps/commit/db350390a54eeba46027bddf7aa318c6acaea9d7))
+* **deps:** bump @contentful/f36-components from 4.75.1 to 4.75.2 in /apps/voucherify in the production-dependencies group ([#3898](https://github.com/shanonplace/marketplace-partner-apps/issues/3898)) ([420a23b](https://github.com/shanonplace/marketplace-partner-apps/commit/420a23b6deee2d82f15a30570bc4f71231f18ce9))
+* **deps:** bump @contentful/f36-components from 4.80.4 to 4.80.5 in /apps/voucherify in the production-dependencies group ([#5461](https://github.com/shanonplace/marketplace-partner-apps/issues/5461)) ([7aff842](https://github.com/shanonplace/marketplace-partner-apps/commit/7aff8429f6dc1c2a868e708bf857cf35322d48e1))
+* **deps:** bump axios from 1.7.8 to 1.7.9 in /apps/voucherify in the production-dependencies group ([#3819](https://github.com/shanonplace/marketplace-partner-apps/issues/3819)) ([20f5664](https://github.com/shanonplace/marketplace-partner-apps/commit/20f5664066c5fbfa7fd429b196eeb8e7cd716522))
+* **deps:** bump axios from 1.7.9 to 1.8.2 in /apps/voucherify ([#4609](https://github.com/shanonplace/marketplace-partner-apps/issues/4609)) ([fa95b7a](https://github.com/shanonplace/marketplace-partner-apps/commit/fa95b7acdd03c2d5e615bb73c5ff449a1652ca5f))
+* **deps:** bump react-hook-form from 7.53.2 to 7.54.0 in /apps/voucherify in the production-dependencies group ([#3853](https://github.com/shanonplace/marketplace-partner-apps/issues/3853)) ([4020fff](https://github.com/shanonplace/marketplace-partner-apps/commit/4020ffffeeb428ae842c6c5a5ab4ead994651338))
+* **deps:** bump react-hook-form from 7.54.1 to 7.54.2 in /apps/voucherify in the production-dependencies group ([#3930](https://github.com/shanonplace/marketplace-partner-apps/issues/3930)) ([531b405](https://github.com/shanonplace/marketplace-partner-apps/commit/531b40558b06a71a797830cdcc28faeae56c5be8))
+* **deps:** bump react-hook-form from 7.59.0 to 7.60.0 in /apps/voucherify in the production-dependencies group ([#5483](https://github.com/shanonplace/marketplace-partner-apps/issues/5483)) ([885f647](https://github.com/shanonplace/marketplace-partner-apps/commit/885f6477305b77b3f00d3f9cc3139e58f37e4570))
+* **deps:** bump the production-dependencies group across 1 directory with 5 updates ([#5184](https://github.com/shanonplace/marketplace-partner-apps/issues/5184)) ([9a12140](https://github.com/shanonplace/marketplace-partner-apps/commit/9a12140c97199ba62cae494fb1aa8af500564ab0))
+* **deps:** bump the production-dependencies group in /apps/voucherify with 2 updates ([#3856](https://github.com/shanonplace/marketplace-partner-apps/issues/3856)) ([bc6a7ce](https://github.com/shanonplace/marketplace-partner-apps/commit/bc6a7ceec768619d16629d65526104c14f71368a))
+* **deps:** bump the production-dependencies group in /apps/voucherify with 2 updates ([#3885](https://github.com/shanonplace/marketplace-partner-apps/issues/3885)) ([230d61b](https://github.com/shanonplace/marketplace-partner-apps/commit/230d61bd489cd3cfa6c5b0d4f4302916966ce2f6))
+* **deps:** bump the production-dependencies group in /apps/voucherify with 2 updates ([#5385](https://github.com/shanonplace/marketplace-partner-apps/issues/5385)) ([95d3414](https://github.com/shanonplace/marketplace-partner-apps/commit/95d3414bbde9690a6b2157946486b9595e5b3a21))
+* update to node v20 [INTEG-2829] ([#5318](https://github.com/shanonplace/marketplace-partner-apps/issues/5318)) ([fdc406d](https://github.com/shanonplace/marketplace-partner-apps/commit/fdc406d9328bc6279abb658dcf5a1bf28795a449))
+
 ## [1.0.29](https://github.com/contentful/marketplace-partner-apps/compare/voucherify-contentful-app-v1.0.28...voucherify-contentful-app-v1.0.29) (2025-07-02)
 
 
