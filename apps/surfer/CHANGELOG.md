@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.0.32](https://github.com/shanonplace/marketplace-partner-apps/compare/surfer-contentful-app-v1.0.31...surfer-contentful-app-v1.0.32) (2025-07-16)
+
+
+### Bug Fixes
+
+* **deps:** bump axios from 1.8.1 to 1.8.2 in /apps/surfer ([#4605](https://github.com/shanonplace/marketplace-partner-apps/issues/4605)) ([e52c812](https://github.com/shanonplace/marketplace-partner-apps/commit/e52c8121c292f45ca8a7ff10c8e146d643cca620))
+* **deps:** bump contentful-management from 11.40.0 to 11.40.1 in /apps/surfer in the production-dependencies group ([#3797](https://github.com/shanonplace/marketplace-partner-apps/issues/3797)) ([0c90cb3](https://github.com/shanonplace/marketplace-partner-apps/commit/0c90cb3560d92b9f2cee52b81fe3a2f57cfe455f))
+* **deps:** bump contentful-management from 11.40.1 to 11.40.2 in /apps/surfer in the production-dependencies group ([#3812](https://github.com/shanonplace/marketplace-partner-apps/issues/3812)) ([9226138](https://github.com/shanonplace/marketplace-partner-apps/commit/92261383daf1211e30c60a9e4444638322c8e852))
+* **deps:** bump contentful-management from 11.53.0 to 11.54.0 in /apps/surfer in the production-dependencies group ([#5268](https://github.com/shanonplace/marketplace-partner-apps/issues/5268)) ([907a805](https://github.com/shanonplace/marketplace-partner-apps/commit/907a805492f68cd48637f04bdc8552ac36172376))
+* **deps:** bump the production-dependencies group across 1 directory with 2 updates ([#4701](https://github.com/shanonplace/marketplace-partner-apps/issues/4701)) ([fcc577a](https://github.com/shanonplace/marketplace-partner-apps/commit/fcc577ad38411660ff9ba44b6730c62257b50ef3))
+* **deps:** bump the production-dependencies group across 1 directory with 5 updates ([#5185](https://github.com/shanonplace/marketplace-partner-apps/issues/5185)) ([fdb7353](https://github.com/shanonplace/marketplace-partner-apps/commit/fdb7353af775303860052b5f06c7ac6be1395582))
+* **deps:** bump the production-dependencies group in /apps/surfer with 3 updates ([#5516](https://github.com/shanonplace/marketplace-partner-apps/issues/5516)) ([c1d562d](https://github.com/shanonplace/marketplace-partner-apps/commit/c1d562df3bd82f37384974ebf91b29a41e945f1c))
+* **deps:** bump the production-dependencies group in /apps/surfer with 5 updates ([#4569](https://github.com/shanonplace/marketplace-partner-apps/issues/4569)) ([6126704](https://github.com/shanonplace/marketplace-partner-apps/commit/612670486211c3d2a8461c823a1a8b1f9734bfe0))
+* update to node v20 [INTEG-2829] ([#5318](https://github.com/shanonplace/marketplace-partner-apps/issues/5318)) ([fdc406d](https://github.com/shanonplace/marketplace-partner-apps/commit/fdc406d9328bc6279abb658dcf5a1bf28795a449))
+
 ## [1.0.31](https://github.com/contentful/marketplace-partner-apps/compare/surfer-contentful-app-v1.0.30...surfer-contentful-app-v1.0.31) (2025-07-02)
 
 
