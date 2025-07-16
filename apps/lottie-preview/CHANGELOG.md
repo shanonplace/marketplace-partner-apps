@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.1.0](https://github.com/shanonplace/marketplace-partner-apps/compare/lottie-preview-v1.0.7...lottie-preview-v1.1.0) (2025-07-16)
+
+
+### Features
+
+* reusable content type and content type field selectors [INTEG-2836] ([#5340](https://github.com/shanonplace/marketplace-partner-apps/issues/5340)) ([6b0da39](https://github.com/shanonplace/marketplace-partner-apps/commit/6b0da39bd3eb208862d62e753285d979ac006996))
+
+
+### Bug Fixes
+
+* **deps:** bump @contentful/f36-components from 4.80.4 to 4.80.5 in /apps/lottie-preview in the production-dependencies group ([#5465](https://github.com/shanonplace/marketplace-partner-apps/issues/5465)) ([871e143](https://github.com/shanonplace/marketplace-partner-apps/commit/871e143348651376fc717224f1c280b46f8c3649))
+* **deps:** bump @lottiefiles/dotlottie-react from 0.13.5 to 0.14.2 in /apps/lottie-preview in the production-dependencies group ([#5411](https://github.com/shanonplace/marketplace-partner-apps/issues/5411)) ([d05c4af](https://github.com/shanonplace/marketplace-partner-apps/commit/d05c4af8037f734a1fa105e5cd6d1504641c0e30))
+* **deps:** bump the production-dependencies group across 1 directory with 4 updates [] ([#4976](https://github.com/shanonplace/marketplace-partner-apps/issues/4976)) ([2dfb40a](https://github.com/shanonplace/marketplace-partner-apps/commit/2dfb40ab5c05205bc41112a91e8e56ac051a4907))
+* hugging face add ability to save asset [INTEG-2583] ([#4987](https://github.com/shanonplace/marketplace-partner-apps/issues/4987)) ([c3fb5b9](https://github.com/shanonplace/marketplace-partner-apps/commit/c3fb5b9634a22c9b477d98418bb213db3fd5cafc))
+* lottie license [] ([#4983](https://github.com/shanonplace/marketplace-partner-apps/issues/4983)) ([45b4f3f](https://github.com/shanonplace/marketplace-partner-apps/commit/45b4f3fb015f3f30ddccbc4d66b24589f9da4890))
+* lottie preview config page fails to load with many content types [ZEND-6496] ([#5146](https://github.com/shanonplace/marketplace-partner-apps/issues/5146)) ([364a7af](https://github.com/shanonplace/marketplace-partner-apps/commit/364a7af94e1aa07cdc9a971e249759071e61f16e))
+* lottie preview rename [INTEG-2555] ([#4929](https://github.com/shanonplace/marketplace-partner-apps/issues/4929)) ([15211b9](https://github.com/shanonplace/marketplace-partner-apps/commit/15211b920d0b3661aa7dfdbf5d53588fb4f8528d))
+* performance issues on lottie viewer config page [ZEND-6496] ([#5139](https://github.com/shanonplace/marketplace-partner-apps/issues/5139)) ([94f102e](https://github.com/shanonplace/marketplace-partner-apps/commit/94f102e2536bea5f1ddef75ee22316cb2d0e1d2f))
+* update to node v20 [INTEG-2829] ([#5318](https://github.com/shanonplace/marketplace-partner-apps/issues/5318)) ([fdc406d](https://github.com/shanonplace/marketplace-partner-apps/commit/fdc406d9328bc6279abb658dcf5a1bf28795a449))
+
 ## [1.0.7](https://github.com/contentful/marketplace-partner-apps/compare/lottie-preview-v1.0.6...lottie-preview-v1.0.7) (2025-07-02)
 
 
