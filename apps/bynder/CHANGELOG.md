@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.19](https://github.com/shanonplace/marketplace-partner-apps/compare/bynder-assets-v1.1.18...bynder-assets-v1.1.19) (2025-07-16)
+
+
+### Bug Fixes
+
+* update bynder contentview version [INTEG-2805] ([#5175](https://github.com/shanonplace/marketplace-partner-apps/issues/5175)) ([049b859](https://github.com/shanonplace/marketplace-partner-apps/commit/049b85962c12e3006f873b6bffc3e9c68a8c86db))
+* update to node v20 [INTEG-2829] ([#5318](https://github.com/shanonplace/marketplace-partner-apps/issues/5318)) ([fdc406d](https://github.com/shanonplace/marketplace-partner-apps/commit/fdc406d9328bc6279abb658dcf5a1bf28795a449))
+
 ## [1.1.18](https://github.com/contentful/marketplace-partner-apps/compare/bynder-assets-v1.1.17...bynder-assets-v1.1.18) (2025-07-02)
 
 
