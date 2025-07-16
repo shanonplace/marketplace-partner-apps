@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.2.13](https://github.com/shanonplace/marketplace-partner-apps/compare/transifex-contentful-app-v1.2.12...transifex-contentful-app-v1.2.13) (2025-07-16)
+
+
+### Bug Fixes
+
+* **deps:** bump @contentful/app-sdk from 4.29.7 to 4.31.0 in /apps/transifex in the production-dependencies group ([#5574](https://github.com/shanonplace/marketplace-partner-apps/issues/5574)) ([81bb1f1](https://github.com/shanonplace/marketplace-partner-apps/commit/81bb1f1536d5ec50882e90388c136e2034091c06))
+* **deps:** bump @contentful/f36-components from 4.80.4 to 4.80.5 in /apps/transifex in the production-dependencies group ([#5448](https://github.com/shanonplace/marketplace-partner-apps/issues/5448)) ([174c61e](https://github.com/shanonplace/marketplace-partner-apps/commit/174c61ea50f91e32e294b9c353dabf235267cd4c))
+* **deps:** bump axios from 1.7.5 to 1.8.2 in /apps/transifex ([#4606](https://github.com/shanonplace/marketplace-partner-apps/issues/4606)) ([5b07482](https://github.com/shanonplace/marketplace-partner-apps/commit/5b07482854c554fe9266c52b67236cf179e3e6d7))
+* **deps:** bump brace-expansion from 1.1.11 to 1.1.12 in /apps/transifex ([#5161](https://github.com/shanonplace/marketplace-partner-apps/issues/5161)) ([c96e7ec](https://github.com/shanonplace/marketplace-partner-apps/commit/c96e7ec8f82df5a60fdd832f9c3ed172db5a9348))
+* **deps:** bump contentful-management from 11.40.0 to 11.40.1 in /apps/transifex in the production-dependencies group ([#3806](https://github.com/shanonplace/marketplace-partner-apps/issues/3806)) ([4e42512](https://github.com/shanonplace/marketplace-partner-apps/commit/4e4251252bcc467eb8e4bcec168dd1241342faf7))
+* **deps:** bump contentful-management from 11.40.1 to 11.40.2 in /apps/transifex in the production-dependencies group ([#3818](https://github.com/shanonplace/marketplace-partner-apps/issues/3818)) ([079b127](https://github.com/shanonplace/marketplace-partner-apps/commit/079b1274a2044fa6cf0f244c64c2fc26124edf48))
+* **deps:** bump contentful-management from 11.53.0 to 11.54.0 in /apps/transifex in the production-dependencies group ([#5258](https://github.com/shanonplace/marketplace-partner-apps/issues/5258)) ([cd0db1f](https://github.com/shanonplace/marketplace-partner-apps/commit/cd0db1f34c3c5cdebf2fb2a8087da60370c972b3))
+* **deps:** bump eslint from 9.15.0 to 9.16.0 in /apps/transifex in the production-dependencies group ([#3770](https://github.com/shanonplace/marketplace-partner-apps/issues/3770)) ([9b98968](https://github.com/shanonplace/marketplace-partner-apps/commit/9b98968d9994adb0bdb92d350163c0fc08aeb14b))
+* **deps:** bump eslint from 9.29.0 to 9.30.0 in /apps/transifex in the production-dependencies group ([#5328](https://github.com/shanonplace/marketplace-partner-apps/issues/5328)) ([3f1e8f4](https://github.com/shanonplace/marketplace-partner-apps/commit/3f1e8f4e2b7e70ef8afe9879198fc634e2b2db25))
+* **deps:** bump the production-dependencies group in /apps/transifex with 7 updates ([#5212](https://github.com/shanonplace/marketplace-partner-apps/issues/5212)) ([c975044](https://github.com/shanonplace/marketplace-partner-apps/commit/c975044ebccd452ace865e58b1b186cd6b6e0ee7))
+* update to node v20 [INTEG-2829] ([#5318](https://github.com/shanonplace/marketplace-partner-apps/issues/5318)) ([fdc406d](https://github.com/shanonplace/marketplace-partner-apps/commit/fdc406d9328bc6279abb658dcf5a1bf28795a449))
+
 ## [1.2.12](https://github.com/contentful/marketplace-partner-apps/compare/transifex-contentful-app-v1.2.11...transifex-contentful-app-v1.2.12) (2025-07-02)
 
 
