@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.21](https://github.com/shanonplace/marketplace-partner-apps/compare/wix-contentful-app-v1.0.20...wix-contentful-app-v1.0.21) (2025-07-16)
+
+
+### Bug Fixes
+
+* **deps:** bump @contentful/f36-components from 4.80.4 to 4.80.5 in /apps/wix in the production-dependencies group ([#5437](https://github.com/shanonplace/marketplace-partner-apps/issues/5437)) ([0dbac82](https://github.com/shanonplace/marketplace-partner-apps/commit/0dbac82576acc4f8d083eb900a8a50fc9cf3b258))
+* **deps:** bump axios from 1.7.5 to 1.8.2 in /apps/wix ([#4604](https://github.com/shanonplace/marketplace-partner-apps/issues/4604)) ([8215379](https://github.com/shanonplace/marketplace-partner-apps/commit/8215379bc1240b1005cb0557bd9fcf476159ae58))
+* **deps:** bump contentful-management from 11.53.0 to 11.54.0 in /apps/wix in the production-dependencies group ([#5247](https://github.com/shanonplace/marketplace-partner-apps/issues/5247)) ([e8e9921](https://github.com/shanonplace/marketplace-partner-apps/commit/e8e99217e02adff024782ad638818d0cbfd4361d))
+* **deps:** bump contentful-management from 11.54.0 to 11.54.1 in /apps/wix in the production-dependencies group ([#5378](https://github.com/shanonplace/marketplace-partner-apps/issues/5378)) ([9ce4d0a](https://github.com/shanonplace/marketplace-partner-apps/commit/9ce4d0a59220e62b514524469c3aed1d2064a7a9))
+* **deps:** bump the production-dependencies group in /apps/wix with 4 updates ([#5061](https://github.com/shanonplace/marketplace-partner-apps/issues/5061)) ([397aceb](https://github.com/shanonplace/marketplace-partner-apps/commit/397aceb981b2e1e33c4a53ad40b486728c90349a))
+* update to node v20 [INTEG-2829] ([#5318](https://github.com/shanonplace/marketplace-partner-apps/issues/5318)) ([fdc406d](https://github.com/shanonplace/marketplace-partner-apps/commit/fdc406d9328bc6279abb658dcf5a1bf28795a449))
+
 ## [1.0.20](https://github.com/contentful/marketplace-partner-apps/compare/wix-contentful-app-v1.0.19...wix-contentful-app-v1.0.20) (2025-07-02)
 
 
