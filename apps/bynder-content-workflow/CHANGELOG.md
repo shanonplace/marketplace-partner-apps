@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.11](https://github.com/shanonplace/marketplace-partner-apps/compare/bynder-content-workflow-v1.0.10...bynder-content-workflow-v1.0.11) (2025-07-16)
+
+
+### Bug Fixes
+
+* **deps:** bump @contentful/f36-components from 4.80.4 to 4.80.5 in /apps/bynder-content-workflow in the production-dependencies group ([#5450](https://github.com/shanonplace/marketplace-partner-apps/issues/5450)) ([915b17b](https://github.com/shanonplace/marketplace-partner-apps/commit/915b17b7f6b8e613bdc454a1eb52da668ba3041c))
+* **deps:** bump contentful-management from 11.53.0 to 11.54.0 in /apps/bynder-content-workflow in the production-dependencies group ([#5253](https://github.com/shanonplace/marketplace-partner-apps/issues/5253)) ([4ab21d3](https://github.com/shanonplace/marketplace-partner-apps/commit/4ab21d351f4cfbf23198bd747b4a4dc9cf4ae8a7))
+* **deps:** bump contentful-management from 11.54.0 to 11.54.1 in /apps/bynder-content-workflow in the production-dependencies group ([#5410](https://github.com/shanonplace/marketplace-partner-apps/issues/5410)) ([532ea67](https://github.com/shanonplace/marketplace-partner-apps/commit/532ea6755d57ce5a6af5ac356fd42df989ed3d49))
+* **deps:** bump nanoid from 3.3.7 to 3.3.8 in /apps/bynder-content-workflow ([#3859](https://github.com/shanonplace/marketplace-partner-apps/issues/3859)) ([9351b4d](https://github.com/shanonplace/marketplace-partner-apps/commit/9351b4d9d1503c8f6b65af0303ddcc654f4d4cdf))
+* **deps:** bump the production-dependencies group in /apps/bynder-content-workflow with 6 updates ([#5100](https://github.com/shanonplace/marketplace-partner-apps/issues/5100)) ([6acd42b](https://github.com/shanonplace/marketplace-partner-apps/commit/6acd42b10aaed645d439ff0eb963ed085fcdff33))
+* Italics in content causes a validation error when importing [INTEG-2515] ([#4746](https://github.com/shanonplace/marketplace-partner-apps/issues/4746)) ([0f6a976](https://github.com/shanonplace/marketplace-partner-apps/commit/0f6a976befdfd8c73c0f7d929cfabecf20765a87))
+* update to node v20 [INTEG-2829] ([#5318](https://github.com/shanonplace/marketplace-partner-apps/issues/5318)) ([fdc406d](https://github.com/shanonplace/marketplace-partner-apps/commit/fdc406d9328bc6279abb658dcf5a1bf28795a449))
+
 ## [1.0.10](https://github.com/contentful/marketplace-partner-apps/compare/bynder-content-workflow-v1.0.9...bynder-content-workflow-v1.0.10) (2025-07-02)
 
 
