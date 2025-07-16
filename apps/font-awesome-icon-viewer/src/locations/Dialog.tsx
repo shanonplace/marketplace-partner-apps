@@ -2,7 +2,7 @@ import { Box, TextInput, Grid, GridItem, Paragraph, Note, Spinner } from '@conte
 import { useSDK } from '@contentful/react-apps-toolkit';
 import { DialogAppSDK } from '@contentful/app-sdk';
 import { useEffect, useMemo, useState } from 'react';
-import { IconLibraryConfig, detectIconLibrary, extractIconClassesFromCSS, cleanIconNameForDisplay, ICON_LIBRARIES } from '../utils/iconLibraries';
+import { extractFontAwesomeIconsFromCSS, cleanIconNameForDisplay } from '../utils/iconLibraries';
 
 const Dialog = () => {
   const sdk = useSDK<DialogAppSDK>();
@@ -10,87 +10,87 @@ const Dialog = () => {
   const invocation = sdk.parameters?.invocation;
   const selected = typeof invocation === 'object' && invocation !== null && 'selected' in invocation ? (invocation as any).selected : null;
 
-  // Access the icon font CSS URL from installation parameters
-  const iconFontCssUrl = sdk.parameters.installation?.iconFontCssUrl;
+  // Access the Font Awesome CSS URL from installation parameters
+  const fontAwesomeCssUrl = sdk.parameters.installation?.iconFontCssUrl;
 
   // State for icon management
   const [iconClasses, setIconClasses] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [detectedLibrary, setDetectedLibrary] = useState<IconLibraryConfig | null>(null);
 
   useEffect(() => {
     console.log('Dialog parameters:', sdk.parameters);
-    console.log('Icon Font CSS URL in dialog:', iconFontCssUrl);
-  }, [sdk.parameters, iconFontCssUrl]);
+    console.log('Font Awesome CSS URL in dialog:', fontAwesomeCssUrl);
+  }, [sdk.parameters, fontAwesomeCssUrl]);
 
-  // Detect icon library based on URL and CSS content
-  const detectLibrary = (url: string, cssContent?: string): IconLibraryConfig => {
-    return detectIconLibrary(url, cssContent) || ICON_LIBRARIES[0]; // fallback to Font Awesome config
-  };
-
-  // Extract icon classes from CSS using library-specific patterns
-  const extractClasses = (css: string, library: IconLibraryConfig): string[] => {
-    return extractIconClassesFromCSS(css, library);
-  };
-
-  // Load the icon font CSS and extract icons
+  // Load the Font Awesome CSS and extract icons
   useEffect(() => {
-    if (!iconFontCssUrl) {
-      setError('No icon font CSS URL configured. Please configure the app installation.');
+    if (!fontAwesomeCssUrl) {
+      setError('No Font Awesome CSS URL configured. Please configure the app installation.');
       setLoading(false);
       return;
     }
 
-    const id = 'icon-font-css';
+    setLoading(true);
+    setError(null);
+
+    console.log('Loading Font Awesome CSS...');
+
+    // First, load the CSS and wait for it to be ready
+    const id = 'font-awesome-css';
     let link = document.getElementById(id) as HTMLLinkElement;
 
     if (!link) {
       link = document.createElement('link');
       link.id = id;
       link.rel = 'stylesheet';
+      link.crossOrigin = 'anonymous';
       document.head.appendChild(link);
     }
 
-    link.href = iconFontCssUrl;
+    // Function to extract icons after CSS is loaded
+    const extractIcons = () => {
+      fetch(fontAwesomeCssUrl)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`Failed to fetch CSS: ${response.statusText}`);
+          }
+          return response.text();
+        })
+        .then((css) => {
+          const extractedClasses = extractFontAwesomeIconsFromCSS(css);
+          if (extractedClasses.length === 0) {
+            throw new Error('No Font Awesome icon classes found. Please check that the CSS URL is correct.');
+          }
 
-    // Detect library type and load icons
-    setLoading(true);
-    setError(null);
+          console.log(`Found ${extractedClasses.length} Font Awesome icons`);
+          setIconClasses(extractedClasses);
+          setLoading(false);
+          setError(null);
+        })
+        .catch((err) => {
+          console.error('Error loading Font Awesome CSS:', err);
+          setError(`Error loading Font Awesome CSS: ${err.message}`);
+          setLoading(false);
+        });
+    };
 
-    const library = detectLibrary(iconFontCssUrl);
-    setDetectedLibrary(library);
-
-    console.log(`Detected icon library: ${library.name}`);
-
-    // Only use CSS parsing for all libraries
-    fetch(iconFontCssUrl)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`Failed to fetch CSS: ${response.statusText}`);
-        }
-        return response.text();
-      })
-      .then((css) => {
-        // Re-detect library with CSS content for better accuracy
-        const detectedWithCSS = detectLibrary(iconFontCssUrl, css);
-        setDetectedLibrary(detectedWithCSS);
-
-        const extractedClasses = extractClasses(css, detectedWithCSS);
-        if (extractedClasses.length === 0) {
-          throw new Error(`No icon classes found. The CSS might not be compatible or the URL might be incorrect.`);
-        }
-
-        setIconClasses(extractedClasses);
+    // Wait for CSS to load, then extract icons
+    if (link.href !== fontAwesomeCssUrl) {
+      link.onload = () => {
+        // Give a small delay to ensure CSS is fully processed
+        setTimeout(extractIcons, 100);
+      };
+      link.onerror = () => {
+        setError('Failed to load Font Awesome CSS. Please check the URL and try again.');
         setLoading(false);
-        setError(null);
-      })
-      .catch((err) => {
-        console.error('Error loading icon font CSS:', err);
-        setError(`Error loading icon font: ${err.message}`);
-        setLoading(false);
-      });
-  }, [iconFontCssUrl]);
+      };
+      link.href = fontAwesomeCssUrl;
+    } else {
+      // CSS already loaded
+      extractIcons();
+    }
+  }, [fontAwesomeCssUrl]);
 
   const filteredIcons = useMemo(() => {
     if (!search) return iconClasses;
@@ -137,11 +137,9 @@ const Dialog = () => {
   return (
     <div style={overlayStyle}>
       <Box style={modalStyle}>
-        <Paragraph style={{ marginBottom: 24, fontWeight: 600, fontSize: 20, letterSpacing: 0.1 }}>
-          Select an icon from {detectedLibrary?.name || 'your icon library'}:
-        </Paragraph>
-        {!iconFontCssUrl ? (
-          <Note variant="negative">No icon font CSS URL configured. Please configure the app installation.</Note>
+        <Paragraph style={{ marginBottom: 24, fontWeight: 600, fontSize: 20, letterSpacing: 0.1 }}>Select an icon from Font Awesome:</Paragraph>
+        {!fontAwesomeCssUrl ? (
+          <Note variant="negative">No Font Awesome CSS URL configured. Please configure the app installation.</Note>
         ) : (
           <>
             <Box marginBottom="spacingL">
@@ -157,28 +155,21 @@ const Dialog = () => {
             {loading && (
               <Box textAlign="center" padding="spacingL">
                 <Spinner />
-                <Paragraph>Loading icons from {detectedLibrary?.name || 'icon library'}...</Paragraph>
+                <Paragraph>Loading icons from Font Awesome...</Paragraph>
               </Box>
             )}
 
             {error && (
               <Note variant="negative" title="Error loading icons">
                 {error}
-                {detectedLibrary && (
-                  <Paragraph marginTop="spacingS">
-                    <strong>Detected library:</strong> {detectedLibrary.name}
-                  </Paragraph>
-                )}
               </Note>
             )}
 
             {!loading && !error && (
               <>
-                {detectedLibrary && (
-                  <Note variant="primary" title={`Using ${detectedLibrary.name}`} style={{ marginBottom: 'var(--f36-spacing-m)' }}>
-                    Found {iconClasses.length} icons from {detectedLibrary.name}
-                  </Note>
-                )}
+                <Note variant="primary" title="Using Font Awesome" style={{ marginBottom: 'var(--f36-spacing-m)' }}>
+                  Found {iconClasses.length} icons from Font Awesome
+                </Note>
                 <Grid columns="repeat(auto-fill, minmax(90px, 1fr))" style={{ gap: '14px', rowGap: '18px', padding: '8px 0' }}>
                   {filteredIcons.map((icon) => (
                     <GridItem key={icon}>
