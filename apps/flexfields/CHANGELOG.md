@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.3.0](https://github.com/shanonplace/marketplace-partner-apps/compare/thrillworks-flex-fields-app-v1.2.11...thrillworks-flex-fields-app-v1.3.0) (2025-07-16)
+
+
+### Features
+
+* use new Forma 36 Layout component [UFO-1877] ([#5544](https://github.com/shanonplace/marketplace-partner-apps/issues/5544)) ([6b1e4f0](https://github.com/shanonplace/marketplace-partner-apps/commit/6b1e4f06e002d9597cd401ed34a5351a3a9ef6d6))
+
+
+### Bug Fixes
+
+* **deps:** bump @contentful/default-field-editors from 1.7.46 to 1.7.47 in /apps/flexfields in the production-dependencies group ([#3846](https://github.com/shanonplace/marketplace-partner-apps/issues/3846)) ([86aedd5](https://github.com/shanonplace/marketplace-partner-apps/commit/86aedd5d44ae21ead82dfc2018cec46239f9b91c))
+* **deps:** bump @contentful/field-editor-reference from 5.31.2 to 6.6.6 in /apps/flexfields [] ([#5022](https://github.com/shanonplace/marketplace-partner-apps/issues/5022)) ([8d2f5e7](https://github.com/shanonplace/marketplace-partner-apps/commit/8d2f5e751a2ed67832151178a804aab768f180c8))
+* **deps:** bump nanoid from 3.3.7 to 3.3.8 in /apps/flexfields ([#3861](https://github.com/shanonplace/marketplace-partner-apps/issues/3861)) ([50512f4](https://github.com/shanonplace/marketplace-partner-apps/commit/50512f4ce1dcaf576ffe7c938ebe638fa53c3178))
+* **deps:** bump the production-dependencies group across 1 directory with 6 updates ([#5351](https://github.com/shanonplace/marketplace-partner-apps/issues/5351)) ([1cb55b9](https://github.com/shanonplace/marketplace-partner-apps/commit/1cb55b97df81fd7789a8a6fb8801e0aef6c3505b))
+* **deps:** bump the production-dependencies group across 1 directory with 7 updates ([#3814](https://github.com/shanonplace/marketplace-partner-apps/issues/3814)) ([c1cd62e](https://github.com/shanonplace/marketplace-partner-apps/commit/c1cd62ed7ffa651921fea3171619003e62e8f1d0))
+* **deps:** bump the production-dependencies group in /apps/flexfields with 2 updates ([#3857](https://github.com/shanonplace/marketplace-partner-apps/issues/3857)) ([4110b4e](https://github.com/shanonplace/marketplace-partner-apps/commit/4110b4ee61a9c157db52572c48f1154540a02fab))
+* **deps:** bump the production-dependencies group in /apps/flexfields with 2 updates ([#5432](https://github.com/shanonplace/marketplace-partner-apps/issues/5432)) ([dbca928](https://github.com/shanonplace/marketplace-partner-apps/commit/dbca928b835112c8ce3f3981e31c842610757904))
+* **deps:** bump the production-dependencies group in /apps/flexfields with 2 updates ([#5499](https://github.com/shanonplace/marketplace-partner-apps/issues/5499)) ([92ae5e1](https://github.com/shanonplace/marketplace-partner-apps/commit/92ae5e1c78831197e2b89c70a414631bf6650693))
+* styling in flexfields: wrapper-width ([#3862](https://github.com/shanonplace/marketplace-partner-apps/issues/3862)) ([0796c87](https://github.com/shanonplace/marketplace-partner-apps/commit/0796c875d95dd3c4daa19ea5d4543856df36b3a6))
+* Update EntryEditor.tsx adds attributes attributes data-field-id={entr… ([#4022](https://github.com/shanonplace/marketplace-partner-apps/issues/4022)) ([5725a90](https://github.com/shanonplace/marketplace-partner-apps/commit/5725a90db4ae5f66c04ce5e09c0054967fb2fef6))
+* update to node v20 [INTEG-2829] ([#5318](https://github.com/shanonplace/marketplace-partner-apps/issues/5318)) ([fdc406d](https://github.com/shanonplace/marketplace-partner-apps/commit/fdc406d9328bc6279abb658dcf5a1bf28795a449))
+
 ## [1.2.11](https://github.com/contentful/marketplace-partner-apps/compare/thrillworks-flex-fields-app-v1.2.10...thrillworks-flex-fields-app-v1.2.11) (2025-07-02)
 
 
