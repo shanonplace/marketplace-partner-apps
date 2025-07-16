@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.8](https://github.com/shanonplace/marketplace-partner-apps/compare/raster-v1.0.7...raster-v1.0.8) (2025-07-16)
+
+
+### Bug Fixes
+
+* **deps:** bump @contentful/f36-components from 4.80.4 to 4.80.5 in /apps/raster in the production-dependencies group ([#5443](https://github.com/shanonplace/marketplace-partner-apps/issues/5443)) ([f5711cb](https://github.com/shanonplace/marketplace-partner-apps/commit/f5711cb8c0a056311ef82df8160383be73dadf59))
+* **deps:** bump nanoid from 3.3.7 to 3.3.8 in /apps/raster ([#3858](https://github.com/shanonplace/marketplace-partner-apps/issues/3858)) ([9527bb5](https://github.com/shanonplace/marketplace-partner-apps/commit/9527bb5812fa86319eb9b6cf586270dbf9e75db4))
+* **deps:** bump next from 14.2.10 to 14.2.15 in /apps/raster ([#3902](https://github.com/shanonplace/marketplace-partner-apps/issues/3902)) ([2d6ed08](https://github.com/shanonplace/marketplace-partner-apps/commit/2d6ed08f0c7231860e01abcd2d4cd9d75c738348))
+* **deps:** bump next from 14.2.15 to 14.2.21 in /apps/raster ([#4015](https://github.com/shanonplace/marketplace-partner-apps/issues/4015)) ([ce92674](https://github.com/shanonplace/marketplace-partner-apps/commit/ce92674a509e2696d8b6289b73ac43cf3e26dc94))
+* **deps:** bump next from 14.2.21 to 15.1.8 in /apps/raster ([#5017](https://github.com/shanonplace/marketplace-partner-apps/issues/5017)) ([2e0618b](https://github.com/shanonplace/marketplace-partner-apps/commit/2e0618bda738cc1edee590b688a3852f16114f6e))
+* **deps:** bump swr from 2.3.3 to 2.3.4 in /apps/raster in the production-dependencies group ([#5381](https://github.com/shanonplace/marketplace-partner-apps/issues/5381)) ([95eb8f1](https://github.com/shanonplace/marketplace-partner-apps/commit/95eb8f1a66e946caafc17272adcc54667b93fbf3))
+* **deps:** bump the production-dependencies group across 1 directory with 8 updates ([#5190](https://github.com/shanonplace/marketplace-partner-apps/issues/5190)) ([7dddeab](https://github.com/shanonplace/marketplace-partner-apps/commit/7dddeab0d4e296c28f95e9ec97d254382ba4a996))
+* update to node v20 [INTEG-2829] ([#5318](https://github.com/shanonplace/marketplace-partner-apps/issues/5318)) ([fdc406d](https://github.com/shanonplace/marketplace-partner-apps/commit/fdc406d9328bc6279abb658dcf5a1bf28795a449))
+
 ## [1.0.7](https://github.com/contentful/marketplace-partner-apps/compare/raster-v1.0.6...raster-v1.0.7) (2025-07-02)
 
 
