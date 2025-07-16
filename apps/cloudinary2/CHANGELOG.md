@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.2.0](https://github.com/shanonplace/marketplace-partner-apps/compare/cloudinary-assets-v1.1.8...cloudinary-assets-v1.2.0) (2025-07-16)
+
+
+### Features
+
+* Cloudinary thumbnail "click to edit" [] ([#5545](https://github.com/shanonplace/marketplace-partner-apps/issues/5545)) ([785a3cd](https://github.com/shanonplace/marketplace-partner-apps/commit/785a3cdcf6668a2720e614c6c2aa42c76f41cb05))
+
+
+### Bug Fixes
+
+* **deps:** bump @contentful/f36-components from 4.80.4 to 4.80.5 in /apps/cloudinary2 in the production-dependencies group ([#5445](https://github.com/shanonplace/marketplace-partner-apps/issues/5445)) ([90be4ee](https://github.com/shanonplace/marketplace-partner-apps/commit/90be4ee308550336ab8b0351af9ba8dceb1c4e5f))
+* **deps:** bump contentful-management from 11.53.0 to 11.54.0 in /apps/cloudinary2 in the production-dependencies group ([#5274](https://github.com/shanonplace/marketplace-partner-apps/issues/5274)) ([88b0ca1](https://github.com/shanonplace/marketplace-partner-apps/commit/88b0ca16876c00cba23a0181a7da8efdf4c3f3b0))
+* **deps:** bump contentful-management from 11.54.0 to 11.54.1 in /apps/cloudinary2 in the production-dependencies group ([#5402](https://github.com/shanonplace/marketplace-partner-apps/issues/5402)) ([eaa3013](https://github.com/shanonplace/marketplace-partner-apps/commit/eaa301314e84e4bf36336a345a964a90e3ec9e75))
+* **deps:** bump the production-dependencies group in /apps/cloudinary2 with 6 updates ([#5232](https://github.com/shanonplace/marketplace-partner-apps/issues/5232)) ([132665b](https://github.com/shanonplace/marketplace-partner-apps/commit/132665b0e8a7f2d02c22bf8de44c5a154c03fb80))
+* update to node v20 [INTEG-2829] ([#5318](https://github.com/shanonplace/marketplace-partner-apps/issues/5318)) ([fdc406d](https://github.com/shanonplace/marketplace-partner-apps/commit/fdc406d9328bc6279abb658dcf5a1bf28795a449))
+
 ## [1.1.8](https://github.com/contentful/marketplace-partner-apps/compare/cloudinary-assets-v1.1.7...cloudinary-assets-v1.1.8) (2025-07-02)
 
 
