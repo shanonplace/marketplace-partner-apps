@@ -1,5 +1,5 @@
 import { ConfigAppSDK } from '@contentful/app-sdk';
-import { Flex, Form, Heading, Paragraph, FormControl, TextInput, Note, List } from '@contentful/f36-components';
+import { Flex, Form, Heading, Paragraph, FormControl, TextInput, Note, List, Box } from '@contentful/f36-components';
 import { useSDK } from '@contentful/react-apps-toolkit';
 import { css } from 'emotion';
 import { useCallback, useEffect, useState } from 'react';
@@ -68,9 +68,9 @@ const ConfigScreen = () => {
   };
 
   return (
-    <Flex flexDirection="column" className="f36-margin--l">
+    <Flex flexDirection="column" className="f36-margin--l" style={{ maxWidth: '800px', padding: '32px' }}>
       <Form>
-        <FormControl isRequired isInvalid={!isValid && parameters.iconFontCssUrl !== undefined}>
+        <FormControl isRequired isInvalid={!isValid && parameters.iconFontCssUrl !== undefined} marginBottom="spacingXl">
           <FormControl.Label>Font Awesome CSS URL</FormControl.Label>
           <TextInput
             value={parameters.iconFontCssUrl || ''}
@@ -87,12 +87,14 @@ const ConfigScreen = () => {
           )}
         </FormControl>
 
-        <Heading as="h4" marginBottom="spacingXs">
-          About this App
-        </Heading>
-        <Paragraph marginBottom="spacingM">
-          This app helps you easily add Font Awesome icons to your content entries by providing a visual icon picker.
-        </Paragraph>
+        <Box marginBottom="spacingXl">
+          <Heading as="h4" marginBottom="spacingS">
+            About this App
+          </Heading>
+          <Paragraph marginBottom="spacingM">
+            This app helps you easily add Font Awesome icons to your content entries by providing a visual icon picker.
+          </Paragraph>
+        </Box>
 
         <Note variant="primary" title="Font Awesome Support">
           <Paragraph marginBottom="spacingS">This app supports Font Awesome icons from any valid CSS URL, including:</Paragraph>

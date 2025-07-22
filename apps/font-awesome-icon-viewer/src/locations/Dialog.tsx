@@ -1,12 +1,21 @@
-import { Box, TextInput, Grid, GridItem, Paragraph, Note, Spinner } from '@contentful/f36-components';
+import { Box, TextInput, Grid, GridItem, Paragraph, Note, Spinner, Flex } from '@contentful/f36-components';
 import { useSDK } from '@contentful/react-apps-toolkit';
 import { DialogAppSDK } from '@contentful/app-sdk';
 import { useEffect, useMemo, useState } from 'react';
-import { extractFontAwesomeIconsFromCSS, cleanIconNameForDisplay } from '../utils/iconLibraries';
+import { extractFontAwesomeIcons, cleanIconNameForDisplay } from '../utils/iconLibraries';
+
+// Group definitions for filters
+const ICON_GROUPS = {
+  all: 'All Icons',
+  brands: 'Brands',
+  solid: 'Solid',
+  regular: 'Regular',
+};
 
 const Dialog = () => {
   const sdk = useSDK<DialogAppSDK>();
   const [search, setSearch] = useState('');
+  const [activeGroup, setActiveGroup] = useState('all');
   const invocation = sdk.parameters?.invocation;
   const selected = typeof invocation === 'object' && invocation !== null && 'selected' in invocation ? (invocation as any).selected : null;
 
@@ -14,7 +23,7 @@ const Dialog = () => {
   const fontAwesomeCssUrl = sdk.parameters.installation?.iconFontCssUrl;
 
   // State for icon management
-  const [iconClasses, setIconClasses] = useState<string[]>([]);
+  const [icons, setIcons] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -58,28 +67,32 @@ const Dialog = () => {
           return response.text();
         })
         .then((css) => {
-          const extractedClasses = extractFontAwesomeIconsFromCSS(css);
-          if (extractedClasses.length === 0) {
+          // Use the utility function to extract icons
+          const extractedIcons = extractFontAwesomeIcons(css);
+
+          if (extractedIcons.length === 0) {
             throw new Error('No Font Awesome icon classes found. Please check that the CSS URL is correct.');
           }
 
-          console.log(`Found ${extractedClasses.length} Font Awesome icons`);
-          setIconClasses(extractedClasses);
-          setLoading(false);
-          setError(null);
+          console.log(`Found ${extractedIcons.length} Font Awesome icons`);
+          setIcons(extractedIcons);
+
+          // Wait a bit more to ensure CSS is fully loaded and applied
+          setTimeout(() => {
+            setLoading(false);
+            setError(null);
+          }, 200);
         })
         .catch((err) => {
           console.error('Error loading Font Awesome CSS:', err);
           setError(`Error loading Font Awesome CSS: ${err.message}`);
           setLoading(false);
         });
-    };
-
-    // Wait for CSS to load, then extract icons
+    }; // Wait for CSS to load, then extract icons
     if (link.href !== fontAwesomeCssUrl) {
       link.onload = () => {
-        // Give a small delay to ensure CSS is fully processed
-        setTimeout(extractIcons, 100);
+        // Give more time to ensure CSS is fully processed and fonts are loaded
+        setTimeout(extractIcons, 500);
       };
       link.onerror = () => {
         setError('Failed to load Font Awesome CSS. Please check the URL and try again.');
@@ -90,12 +103,35 @@ const Dialog = () => {
       // CSS already loaded
       extractIcons();
     }
-  }, [fontAwesomeCssUrl]);
+  }, [fontAwesomeCssUrl, sdk]);
 
   const filteredIcons = useMemo(() => {
-    if (!search) return iconClasses;
-    return iconClasses.filter((icon) => icon.toLowerCase().includes(search.toLowerCase()));
-  }, [search, iconClasses]);
+    let filtered = icons;
+
+    // Filter by group if not "all"
+    if (activeGroup !== 'all') {
+      filtered = icons.filter((icon) => {
+        if (activeGroup === 'brands') {
+          return icon.startsWith('fab');
+        } else if (activeGroup === 'solid') {
+          return icon.startsWith('fas');
+        } else if (activeGroup === 'regular') {
+          return icon.startsWith('far');
+        }
+        return true;
+      });
+    }
+
+    // Then filter by search
+    if (search) {
+      filtered = filtered.filter((icon) => {
+        const iconName = cleanIconNameForDisplay(icon);
+        return iconName.toLowerCase().includes(search.toLowerCase());
+      });
+    }
+
+    return filtered;
+  }, [search, icons, activeGroup]);
 
   const handleSelect = (icon: string) => {
     sdk.close(icon);
@@ -134,6 +170,19 @@ const Dialog = () => {
     justifyContent: 'flex-start',
   };
 
+  const tabButtonStyle = (isActive: boolean): React.CSSProperties => ({
+    padding: '8px 16px',
+    borderRadius: '6px',
+    background: isActive ? '#2563eb' : 'transparent',
+    color: isActive ? 'white' : '#4b5563',
+    cursor: 'pointer',
+    fontSize: '14px',
+    fontWeight: 500,
+    border: 'none',
+    marginRight: '8px',
+    transition: 'all 0.2s',
+  });
+
   return (
     <div style={overlayStyle}>
       <Box style={modalStyle}>
@@ -142,15 +191,23 @@ const Dialog = () => {
           <Note variant="negative">No Font Awesome CSS URL configured. Please configure the app installation.</Note>
         ) : (
           <>
-            <Box marginBottom="spacingL">
+            <Flex marginBottom="spacingM" justifyContent="space-between">
               <TextInput
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 placeholder="Search icons..."
                 autoFocus
-                style={{ padding: 10, fontSize: 16, borderRadius: 8, border: '1.5px solid #e5e7eb', background: '#f8fafc' }}
+                style={{ padding: 10, fontSize: 16, borderRadius: 8, border: '1.5px solid #e5e7eb', background: '#f8fafc', width: '60%' }}
               />
-            </Box>
+
+              <Flex>
+                {Object.entries(ICON_GROUPS).map(([key, label]) => (
+                  <button key={key} style={tabButtonStyle(activeGroup === key)} onClick={() => setActiveGroup(key)}>
+                    {label}
+                  </button>
+                ))}
+              </Flex>
+            </Flex>
 
             {loading && (
               <Box textAlign="center" padding="spacingL">
@@ -168,8 +225,9 @@ const Dialog = () => {
             {!loading && !error && (
               <>
                 <Note variant="primary" title="Using Font Awesome" style={{ marginBottom: 'var(--f36-spacing-m)' }}>
-                  Found {iconClasses.length} icons from Font Awesome
+                  {`Found ${icons.length} icons from Font Awesome (showing ${filteredIcons.length})`}
                 </Note>
+
                 <Grid columns="repeat(auto-fill, minmax(90px, 1fr))" style={{ gap: '14px', rowGap: '18px', padding: '8px 0' }}>
                   {filteredIcons.map((icon) => (
                     <GridItem key={icon}>
@@ -218,10 +276,14 @@ const Dialog = () => {
                     </GridItem>
                   ))}
                 </Grid>
+
+                {filteredIcons.length === 0 && (
+                  <Paragraph>
+                    {search ? `No icons found matching "${search}". Try a different search term.` : `No icons found in this Font Awesome CSS.`}
+                  </Paragraph>
+                )}
               </>
             )}
-
-            {!loading && !error && filteredIcons.length === 0 && <Paragraph>No icons found matching "{search}". Try a different search term.</Paragraph>}
           </>
         )}
       </Box>

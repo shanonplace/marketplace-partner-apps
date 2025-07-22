@@ -6,36 +6,73 @@ export const extractFontAwesomeIcons = (css: string): string[] => {
   const solidIcons = new Set<string>();
   const regularIcons = new Set<string>();
 
+  // First, find the Brand Font Family definition
+  // Font Awesome typically defines brand icons with a specific font family
+  let brandFontFamily = "";
+  const brandFontRegex = /\.fa-brands,\s*\.fab\s*{[^}]*font-family:\s*["']([^"']+)["'][^}]*}/i;
+  const brandFontMatch = brandFontRegex.exec(css);
+  if (brandFontMatch) {
+    brandFontFamily = brandFontMatch[1];
+    console.log(`Found brand font family: ${brandFontFamily}`);
+  }
+
+  // Also look for brand-specific CSS sections
+  const brandSectionRegex = /\.fab\s*,\s*\.fa-brands\s*{[^}]*}/g;
+  const brandSections = [...css.matchAll(brandSectionRegex)].map(match => match[0]);
+  
   // Extract all icon definitions
   // Support both single-colon and double-colon syntax
   const iconRegex = /\.fa-([a-zA-Z0-9-]+)(?:::?before)\s*\{[^}]*content:\s*"\\([a-fA-F0-9]+)"[^}]*\}/g;
 
+  // First pass: collect all icon names
+  const allIconNames = new Set<string>();
   let match;
+  
   while ((match = iconRegex.exec(css)) !== null) {
     const iconName = match[1];
-
+    
     // Skip utility classes, size classes, etc.
     if (iconName.match(/^(xs|sm|lg|xl|2xl|2xs|fw|border|pull|stack|inverse|spin|pulse|beat|bounce|fade|flip|shake|rotate|[0-9]+x|sr|li|ul)$/)) {
       continue;
     }
-
-    // Determine if this is a brand icon using hardcoded list
-    const isBrandIcon = iconName.match(
-      /^(shopify|github|apple|facebook|twitter|instagram|linkedin|youtube|google|amazon|adobe|airbnb|android|angular|app-store|apple-pay|aws|bandcamp|behance|bitcoin|bluetooth|chrome|codepen|css3|dev|digital-ocean|discord|dribbble|dropbox|drupal|edge|ethereum|etsy|figma|firefox|font-awesome|free-code-camp|git|gitlab|html5|imdb|java|jira|js|kickstarter|laravel|less|mailchimp|mastodon|medium|microsoft|node|npm|paypal|php|pinterest|playstation|product-hunt|python|react|reddit|salesforce|sass|shopify|sketch|skype|slack|snapchat|soundcloud|spotify|square|stack-exchange|stack-overflow|stripe|swift|telegram|tiktok|trello|tumblr|twitch|twitter|typescript|uber|unity|unsplash|vimeo|vine|visa|vue|wechat|whatsapp|windows|wix|wordpress|xbox|xing|yahoo|yelp|youtube|zoom)$/
+    
+    allIconNames.add(iconName);
+  }
+  
+  // Second pass: analyze how each icon is used in the CSS to determine its type
+  for (const iconName of allIconNames) {
+    // Check if this icon is referenced in the brand sections
+    const isBrand = brandSections.some(section => 
+      section.includes(`.fa-${iconName}`) || 
+      css.includes(`.fab.fa-${iconName}`) || 
+      css.includes(`.fa-brands.fa-${iconName}`)
     );
-
-    if (isBrandIcon) {
+    
+    if (isBrand) {
       brandIcons.add(iconName);
     } else {
+      // If not explicitly a brand, assume it could be both solid and regular
       solidIcons.add(iconName);
       regularIcons.add(iconName);
     }
-
+    
     // Debug logging for specific icons we're looking for
     if (iconName === 'shopify' || iconName === 'github' || iconName === 'apple') {
-      console.log(`Found brand icon: ${iconName}`);
+      console.log(`Found icon: ${iconName}, isBrand: ${isBrand}`);
     }
   }
+
+  // Look for style classes (fas, far, fab) associated with icons
+  // to further refine which icons are regular vs solid
+  allIconNames.forEach(iconName => {
+    // Check if this icon has specific style classes
+    if (css.includes(`.fas.fa-${iconName}`) || css.includes(`.fa-solid.fa-${iconName}`)) {
+      solidIcons.add(iconName);
+    }
+    if (css.includes(`.far.fa-${iconName}`) || css.includes(`.fa-regular.fa-${iconName}`)) {
+      regularIcons.add(iconName);
+    }
+  });
 
   // Brand icons (use fab fa-iconname)
   brandIcons.forEach((iconName) => {
